@@ -264,7 +264,7 @@ img {
 .hero {
     position: relative;
     padding-top: 62px;
-    overflow: hidden;
+    overflow: visible;
 
     color: white;
     background-color: #020818;
@@ -311,23 +311,13 @@ img {
 }
 
 .hero::after {
-    width: min(640px, 80vw);
-    height: min(640px, 70vh);
-    bottom: -28%;
-    left: -18%;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        rgba(0, 8, 28, 0.75) 0%,
-        rgba(2, 16, 48, 0.45) 45%,
-        transparent 70%
-    );
-    filter: blur(40px);
+    display: none;
 }
 
 .hero > .container {
     position: relative;
     z-index: 1;
+    overflow: visible;
 }
 
 .hero__content {
@@ -337,6 +327,7 @@ img {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
     align-items: center;
     gap: clamp(24px, 2.2vw, 32px);
+    overflow: visible;
 }
 
 .hero__information {
@@ -406,23 +397,26 @@ img {
 .hero__visual {
     position: relative;
     min-height: 620px;
-    max-width: 100%;
+    min-width: 0;
+    max-width: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: visible;
 }
 
 .hero-showcase {
     position: relative;
-    width: min(100%, 600px);
-    height: 630px;
+    width: 760px;
+    max-width: none;
+    height: 660px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: -12px;
     padding: 0;
+    overflow: visible;
 
-    perspective: 1400px;
-    perspective-origin: 58% 46%;
+    perspective: 1600px;
+    perspective-origin: 56% 48%;
 }
 
 .hero-showcase::before {
@@ -430,32 +424,32 @@ img {
     position: absolute;
     z-index: 0;
 
-    width: 430px;
-    height: 430px;
+    width: min(600px, 96%);
+    height: 400px;
 
-    top: 50%;
-    right: -15px;
+    top: 52%;
+    right: 12px;
 
     transform: translateY(-50%);
     border-radius: 50%;
 
     background:
         radial-gradient(
-            circle at 44% 46%,
+            circle at 50% 62%,
             rgba(56, 139, 255, 0.34) 0%,
-            rgba(31, 108, 246, 0.24) 34%,
-            rgba(18, 72, 186, 0.14) 58%,
-            rgba(8, 40, 118, 0.06) 72%,
-            transparent 82%
+            rgba(31, 108, 246, 0.22) 32%,
+            rgba(18, 72, 186, 0.11) 56%,
+            rgba(8, 40, 118, 0.04) 70%,
+            transparent 86%
         );
 
-    border: 1px solid rgba(60, 145, 255, 0.58);
+    border: 1px solid rgba(60, 145, 255, 0.38);
 
     box-shadow:
-        0 0 28px rgba(45, 132, 255, 0.62),
-        0 0 80px rgba(31, 106, 255, 0.38),
-        0 0 140px rgba(20, 78, 220, 0.18),
-        inset 0 0 64px rgba(69, 148, 255, 0.14);
+        0 0 36px rgba(45, 132, 255, 0.48),
+        0 0 100px rgba(31, 106, 255, 0.3),
+        0 0 160px rgba(20, 78, 220, 0.14),
+        inset 0 0 80px rgba(69, 148, 255, 0.1);
 
     pointer-events: none;
 }
@@ -463,47 +457,33 @@ img {
 .hero-showcase__glow {
     position: absolute;
     z-index: 0;
-    width: 390px;
-    height: 390px;
-    top: 50%;
+    width: min(520px, 92%);
+    height: 420px;
+    top: 52%;
     left: auto;
-    right: 5px;
+    right: 22px;
     transform: translateY(-50%);
     border-radius: 50%;
     background:
         radial-gradient(
-            circle at 58% 62%,
-            rgba(64, 149, 255, 0.52) 0%,
-            rgba(35, 113, 255, 0.30) 36%,
-            rgba(18, 73, 202, 0.12) 62%,
-            transparent 78%
+            circle at 52% 68%,
+            rgba(64, 149, 255, 0.44) 0%,
+            rgba(35, 113, 255, 0.24) 36%,
+            rgba(18, 73, 202, 0.08) 62%,
+            transparent 82%
         );
-    filter: blur(10px);
+    filter: blur(14px);
     pointer-events: none;
-}
-
-.hero-showcase__glow--rating {
-    z-index: 0;
-    width: 220px;
-    height: 220px;
-    top: 14%;
-    left: 18%;
-    background:
-        radial-gradient(
-            circle,
-            rgba(50, 120, 255, 0.28) 0%,
-            transparent 68%
-        );
 }
 
 .hero-showcase__arc {
     position: absolute;
     z-index: 1;
-    width: 455px;
-    height: 455px;
-    top: 50%;
+    width: 510px;
+    height: 510px;
+    top: 52%;
     left: auto;
-    right: -28px;
+    right: -10px;
     border-radius: 50%;
     border: 1px solid rgba(70, 150, 255, 0.28);
     border-left-color: transparent;
@@ -549,425 +529,251 @@ img {
     opacity: 0.7;
 }
 
-.rating-float-card {
+.seller-scene {
     position: absolute;
-    z-index: 3;
-    top: 66px;
-    left: 20px;
-    width: 195px;
-    padding: 20px 20px 18px;
+    inset: 0;
+    z-index: 1;
+    overflow: visible;
+    transform-style: preserve-3d;
+}
 
-    color: #fff;
+.seller-scene__connections {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.seller-stock-connection {
+    position: absolute;
+    right: calc(100% - 7px);
+    top: 48%;
+    width: 180px;
+    height: 210px;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.seller-connection {
+    fill: none;
+    stroke: rgba(93, 162, 255, 0.9);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 7 7;
+    filter:
+        drop-shadow(0 0 4px rgba(73, 145, 255, 0.75))
+        drop-shadow(0 0 9px rgba(73, 145, 255, 0.3));
+}
+
+.seller-dashboard {
+    position: absolute;
+    z-index: 4;
+    top: 52%;
+    right: -8px;
+    width: 582px;
+    margin: 0;
+    padding: 5px;
+    overflow: visible;
+    border-radius: 20px;
+    border: none;
     background:
         linear-gradient(
             145deg,
-            rgba(13, 48, 120, 0.98) 0%,
-            rgba(8, 32, 86, 0.98) 55%,
-            rgba(5, 21, 61, 0.98) 100%
+            #555b66 0%,
+            #242830 35%,
+            #111318 70%,
+            #07080b 100%
         );
-    border: 1px solid rgba(71, 153, 255, 0.8);
-    border-radius: 24px;
     box-shadow:
-        0 24px 55px rgba(0, 19, 72, 0.52),
-        0 0 18px rgba(30, 112, 255, 0.65),
-        0 0 42px rgba(22, 92, 255, 0.34),
-        inset 0 1px 0 rgba(255, 255, 255, 0.18);
-
-    transform: perspective(800px) rotateY(7deg) rotateZ(-5deg);
-    transform-style: preserve-3d;
-    animation: showcase-float-rating 8s ease-in-out 0.4s infinite;
-}
-
-.rating-float-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        transparent 42%
-    );
-    pointer-events: none;
-}
-
-.rating-float-card::after {
-    content: "";
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    right: -20px;
-    bottom: -30px;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        rgba(55, 140, 255, 0.75) 0%,
-        transparent 70%
-    );
-    filter: blur(18px);
-    opacity: 0.55;
-    pointer-events: none;
-}
-
-.rating-float-card__title {
-    display: block;
-    color: rgba(230, 239, 255, 0.9);
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.rating-float-card__value {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 6px 8px;
-}
-
-.rating-float-card__value span:first-child {
-    color: rgba(213, 226, 250, 0.78);
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.rating-float-card__value strong {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -0.6px;
-    color: #ffffff;
-    text-shadow: 0 0 18px rgba(70, 145, 255, 0.22);
-}
-
-.rating-float-card__arrow {
-    width: 12px;
-    height: 12px;
-    position: relative;
-    flex-shrink: 0;
-    align-self: center;
-    margin-top: -5px;
-}
-
-.rating-float-card__arrow::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 7px;
-    height: 7px;
-    border-right: 2.5px solid #3dff9a;
-    border-bottom: 2.5px solid #3dff9a;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.rating-float-card__badge {
-    padding: 3px 8px;
-    color: #0d5c36;
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 999px;
-    background: #45e896;
-    box-shadow: 0 0 12px rgba(52, 220, 130, 0.45);
-}
-
-.rating-float-card__stars {
-    margin-top: 10px;
-    display: flex;
-    gap: 3px;
-}
-
-.rating-float-card__stars span {
-    width: 12px;
-    height: 12px;
-    clip-path: polygon(
-        50% 0%,
-        61% 35%,
-        98% 35%,
-        68% 57%,
-        79% 91%,
-        50% 70%,
-        21% 91%,
-        32% 57%,
-        2% 35%,
-        39% 35%
-    );
-    background: #ffb020;
-}
-
-.rating-float-card__note {
-    display: block;
-    margin-top: 12px;
-    color: rgba(213, 226, 250, 0.76);
-    font-size: 10px;
-    line-height: 1.35;
-}
-
-.ozon-phone {
-    position: absolute;
-    z-index: 4;
-    top: 51%;
-    right: 8px;
-    width: 338px;
+        inset 0 1px 0 rgba(255, 255, 255, 0.14),
+        inset 1px 0 0 rgba(255, 255, 255, 0.06),
+        0 45px 90px rgba(0, 7, 30, 0.6),
+        0 24px 48px rgba(0, 0, 0, 0.28),
+        0 32px 72px rgba(32, 108, 255, 0.18),
+        0 0 22px rgba(65, 140, 255, 0.16);
     transform:
         translateY(-50%)
-        perspective(1300px)
-        rotateY(-14deg)
-        rotateX(1deg)
-        rotateZ(3deg);
+        perspective(1500px)
+        rotateY(-8deg)
+        rotateX(2deg)
+        rotateZ(1.5deg)
+        translateZ(0);
     transform-origin: center center;
     transform-style: preserve-3d;
-    animation: showcase-float-phone 8s ease-in-out infinite;
 }
 
-.ozon-phone::before {
+.seller-dashboard::before {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 1px 0 0 rgba(255, 255, 255, 0.08),
+        inset 0 0 0 1px rgba(90, 155, 255, 0.12);
+}
+
+.seller-dashboard::after {
     content: "";
     position: absolute;
     z-index: -1;
-    inset: 14% -15% -11% -8%;
-    background:
-        radial-gradient(
-            ellipse at 58% 82%,
-            rgba(26, 115, 255, 0.85) 0%,
-            rgba(26, 105, 255, 0.4) 28%,
-            rgba(20, 78, 210, 0.14) 54%,
-            transparent 74%
-        );
-    filter: blur(20px);
-    pointer-events: none;
-}
-
-.ozon-phone::after {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    left: 2%;
-    right: -12%;
-    bottom: -5%;
-    height: 54px;
-    border-radius: 50%;
-    background: radial-gradient(
-        ellipse at 58% 50%,
-        rgba(37, 123, 255, 0.88) 0%,
-        rgba(26, 96, 239, 0.46) 42%,
-        transparent 74%
+    left: 3%;
+    right: 3%;
+    top: calc(100% - 2px);
+    height: 24px;
+    border-radius: 0 0 12px 12px;
+    clip-path: polygon(
+        3% 0,
+        97% 0,
+        100% 75%,
+        92% 100%,
+        8% 100%,
+        0 75%
     );
-    opacity: 0.85;
-    filter: blur(20px);
-    pointer-events: none;
-}
-
-.ozon-phone__button {
-    position: absolute;
-    z-index: 3;
-    border-radius: 2px;
-    background: linear-gradient(90deg, #3a3a40, #1a1a1e);
-}
-
-.ozon-phone__button--silent {
-    width: 3px;
-    height: 26px;
-    top: 128px;
-    left: -1px;
-}
-
-.ozon-phone__button--volume-up {
-    width: 3px;
-    height: 48px;
-    top: 168px;
-    left: -1px;
-}
-
-.ozon-phone__button--volume-down {
-    width: 3px;
-    height: 48px;
-    top: 224px;
-    left: -1px;
-}
-
-.ozon-phone__button--power {
-    width: 3px;
-    height: 70px;
-    top: 182px;
-    right: -2px;
-}
-
-.ozon-phone__frame {
-    position: relative;
-    padding: 12px;
-    border-radius: 48px;
     background:
         linear-gradient(
-            135deg,
-            #8b8e96 0%,
-            #3e424a 8%,
-            #111216 24%,
-            #050507 62%,
-            #353941 88%,
-            #8a8e98 100%
+            180deg,
+            #343943 0%,
+            #181b22 45%,
+            #090b10 100%
         );
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.24),
-        inset 4px 0 7px rgba(255, 255, 255, 0.08),
-        inset -8px 0 14px rgba(0, 0, 0, 0.7),
-        inset 0 -10px 20px rgba(0, 0, 0, 0.55),
-        18px 28px 55px rgba(0, 0, 0, 0.46),
-        0 18px 38px rgba(0, 24, 83, 0.4),
-        0 0 34px rgba(37, 121, 255, 0.3);
-}
-
-.ozon-phone__frame::after {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    top: 10%;
-    right: 5px;
-    width: 3px;
-    height: 52%;
-    border-radius: 3px;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.32) 0%,
-        rgba(255, 255, 255, 0.08) 45%,
-        rgba(255, 255, 255, 0.02) 100%
-    );
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        0 14px 32px rgba(0, 0, 0, 0.42),
+        0 8px 20px rgba(0, 7, 30, 0.35);
     pointer-events: none;
 }
 
-.ozon-phone__island {
-    position: absolute;
-    z-index: 4;
-    top: 20px;
-    left: 50%;
-    width: 92px;
-    height: 26px;
-    transform: translateX(-50%);
-    border-radius: 999px;
-    background: #000;
-    pointer-events: none;
-}
-
-.ozon-phone__screen {
+.seller-dashboard img {
     display: block;
     width: 100%;
-    height: 600px;
-    border-radius: 38px;
+    height: auto;
+    border-radius: 16px;
     object-fit: cover;
-    object-position: center -2px;
-    filter: contrast(1.03) saturate(1.04);
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+    object-position: center 6%;
+    aspect-ratio: 16 / 9.2;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.16);
 }
 
-.ozon-phone__home {
+.seller-sales {
     position: absolute;
-    z-index: 4;
-    bottom: 18px;
-    left: 50%;
-    width: 100px;
-    height: 4px;
-    transform: translateX(-50%);
-    border-radius: 999px;
-    background: rgba(0, 0, 0, 0.22);
-    pointer-events: none;
-}
-
-.ozon-review-card {
-    position: absolute;
-    z-index: 6;
-    left: -10px;
-    bottom: 54px;
+    z-index: 5;
+    top: 50px;
+    left: 28px;
     width: 258px;
-    aspect-ratio: 1.12 / 1;
     margin: 0;
-
+    padding: 0;
     overflow: hidden;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.72);
-    box-shadow:
-        18px 30px 60px rgba(0, 15, 55, 0.34),
-        0 14px 28px rgba(0, 0, 0, 0.14),
-        0 0 0 1px rgba(255, 255, 255, 0.5),
-        0 0 34px rgba(59, 136, 255, 0.1);
+    border-radius: 17px;
     background: #fff;
-
-    transform: perspective(1000px) rotateY(3deg) rotateZ(-3deg);
+    border: 1px solid rgba(150, 200, 255, 0.72);
+    outline: 1px solid rgba(60, 130, 255, 0.12);
+    outline-offset: 1px;
+    box-shadow:
+        0 34px 70px rgba(0, 5, 25, 0.58),
+        0 16px 30px rgba(0, 0, 0, 0.34),
+        0 6px 14px rgba(0, 0, 0, 0.22),
+        0 0 18px rgba(64, 145, 255, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform:
+        perspective(1100px)
+        rotateY(8deg)
+        rotateX(-2deg)
+        rotateZ(-3deg)
+        translateZ(30px);
+    transform-origin: center center;
     transform-style: preserve-3d;
-    animation: showcase-float-review 9s ease-in-out 0.8s infinite;
 }
 
-.ozon-review-card::after {
+.seller-sales::before {
     content: "";
     position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 8%;
-    right: 8%;
-    height: 1px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.9),
-        transparent
-    );
-    opacity: 0.65;
+    inset: 12% 8%;
+    z-index: -1;
+    border-radius: 24px;
+    background: rgba(40, 120, 255, 0.18);
+    filter: blur(24px);
+    opacity: 0.8;
     pointer-events: none;
 }
 
-.ozon-review-card img {
+.seller-sales::after {
+    display: none;
+}
+
+.seller-sales img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.seller-stock {
+    position: absolute;
+    z-index: 5;
+    left: 35px;
+    bottom: 50px;
+    width: 350px;
+    height: 185px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: transparent;
+    border: 1px solid rgba(150, 200, 255, 0.72);
+    outline: 1px solid rgba(60, 130, 255, 0.12);
+    outline-offset: 1px;
+    box-shadow:
+        0 34px 70px rgba(0, 5, 25, 0.58),
+        0 16px 30px rgba(0, 0, 0, 0.34),
+        0 6px 14px rgba(0, 0, 0, 0.22),
+        0 0 18px rgba(64, 145, 255, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform:
+        perspective(1100px)
+        rotateY(-6deg)
+        rotateX(4deg)
+        rotateZ(2deg)
+        translateZ(45px);
+    transform-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.seller-stock::before {
+    content: "";
+    position: absolute;
+    inset: 12% 8%;
+    z-index: -1;
+    border-radius: 24px;
+    background: rgba(40, 120, 255, 0.18);
+    filter: blur(24px);
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.seller-stock::after {
+    display: none;
+}
+
+.seller-stock img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
-}
-
-@keyframes showcase-float-phone {
-    0%,
-    100% {
-        transform:
-            translateY(-50%)
-            perspective(1300px)
-            rotateY(-14deg)
-            rotateX(1deg)
-            rotateZ(3deg)
-            translateY(0);
-    }
-
-    50% {
-        transform:
-            translateY(-50%)
-            perspective(1300px)
-            rotateY(-14deg)
-            rotateX(1deg)
-            rotateZ(3deg)
-            translateY(-4px);
-    }
-}
-
-@keyframes showcase-float-rating {
-    0%,
-    100% {
-        transform: perspective(800px) rotateY(7deg) rotateZ(-5deg) translateY(0);
-    }
-
-    50% {
-        transform: perspective(800px) rotateY(7deg) rotateZ(-5deg) translateY(-3px);
-    }
-}
-
-@keyframes showcase-float-review {
-    0%,
-    100% {
-        transform: perspective(1000px) rotateY(3deg) rotateZ(-3deg) translateY(0);
-    }
-
-    50% {
-        transform: perspective(1000px) rotateY(3deg) rotateZ(-3deg) translateY(-3px);
-    }
+    object-position: center center;
+    transform: scale(1.08);
+    transform-origin: center center;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .ozon-phone,
-    .rating-float-card,
-    .ozon-review-card {
+    .seller-dashboard,
+    .seller-sales,
+    .seller-stock {
         animation: none !important;
     }
 }
@@ -1797,38 +1603,35 @@ img {
 
 @media (max-width: 1024px) {
     .hero-showcase {
-        width: min(100%, 560px);
-        height: 610px;
+        width: min(100%, 760px);
+        max-width: 100%;
+        height: 650px;
+        margin-right: 0;
         padding: 0;
     }
 
-    .ozon-phone {
-        width: 300px;
-        right: 16px;
+    .seller-dashboard {
+        width: 500px;
+        right: 0;
         top: 52%;
     }
 
-    .ozon-phone__screen {
-        height: 545px;
-    }
-
-    .ozon-review-card {
-        width: 232px;
-        max-height: 255px;
-        bottom: 38px;
-        left: 6px;
-    }
-
-    .rating-float-card {
+    .seller-sales {
+        width: 220px;
         top: 48px;
-        left: 14px;
-        width: 185px;
-        padding: 18px;
+        left: 20px;
+    }
+
+    .seller-stock {
+        width: 300px;
+        height: 158px;
+        bottom: 44px;
+        left: 28px;
     }
 
     .hero-showcase__arc {
-        width: min(360px, 68%);
-        height: min(360px, 68%);
+        width: min(380px, 70%);
+        height: min(380px, 70%);
     }
 }
 
@@ -1850,30 +1653,34 @@ img {
 
     .hero-showcase {
         width: min(100%, 480px);
+        max-width: 100%;
         height: 600px;
+        margin-right: auto;
         padding-right: 24px;
-        margin: 0 auto;
+        margin-left: auto;
     }
 
-    .ozon-phone {
-        width: 298px;
-        right: 24px;
-        transform: translateY(-50%) rotateY(-8deg) rotateZ(3deg);
+    .seller-dashboard {
+        width: 460px;
+        right: 4px;
     }
 
-    .ozon-phone__screen {
-        height: 540px;
+    .seller-sales {
+        width: 200px;
+        left: 0;
+        top: 64px;
     }
 
-    .ozon-review-card {
-        width: 238px;
-        bottom: 56px;
-        left: 8px;
-        transform: perspective(1000px) rotateY(5deg) rotateZ(-3deg);
+    .seller-stock {
+        width: 272px;
+        height: 144px;
+        left: 12px;
+        bottom: 48px;
     }
 
-    .rating-float-card {
-        transform: perspective(800px) rotateY(6deg) rotateZ(-4deg);
+    .seller-scene__connections,
+    .seller-stock-connection {
+        display: none;
     }
 
     .telegram-reviews {
@@ -1981,53 +1788,60 @@ img {
         perspective: 1000px;
     }
 
-    .rating-float-card {
-        top: 4px;
-        left: 0;
-        width: min(158px, 40vw);
-        padding: 14px 14px 12px;
-        transform: perspective(700px) rotateY(5deg) rotateZ(-3deg);
+    .seller-scene {
+        position: relative;
+        min-height: 580px;
     }
 
-    .rating-float-card__value strong {
-        font-size: 24px;
-    }
-
-    .rating-float-card__value span:first-child {
-        font-size: 18px;
-    }
-
-    .ozon-phone {
+    .seller-dashboard {
         position: relative;
         top: auto;
         right: auto;
-        width: min(262px, 86vw);
-        margin: 108px auto 0;
-        transform: rotateY(-6deg) rotateZ(2deg);
-        animation: showcase-float-phone-mobile 8s ease-in-out infinite;
+        width: min(100%, 340px);
+        margin: 92px 0 0 auto;
+        transform:
+            translateY(0)
+            perspective(1200px)
+            rotateY(-7deg)
+            rotateX(2deg)
+            rotateZ(1.5deg)
+            translateZ(0);
     }
 
-    @keyframes showcase-float-phone-mobile {
-        0%,
-        100% {
-            transform: rotateY(-6deg) rotateZ(2deg) translateY(0);
-        }
-
-        50% {
-            transform: rotateY(-6deg) rotateZ(2deg) translateY(-4px);
-        }
+    .seller-dashboard::after {
+        height: 22px;
+        left: 3%;
+        right: 3%;
     }
 
-    .ozon-phone__screen {
-        height: 500px;
+    .seller-sales {
+        width: min(196px, 50vw);
+        top: 72px;
+        left: 4px;
+        transform:
+            perspective(900px)
+            rotateY(7deg)
+            rotateX(-2deg)
+            rotateZ(-3deg)
+            translateZ(22px);
     }
 
-    .ozon-review-card {
-        left: 8px;
-        bottom: 20px;
-        width: min(212px, 68vw);
-        max-height: 240px;
-        transform: perspective(900px) rotateY(4deg) rotateZ(-2deg);
+    .seller-stock {
+        width: min(280px, 72vw);
+        height: 148px;
+        left: 12px;
+        bottom: 72px;
+        transform:
+            perspective(950px)
+            rotateY(-6deg)
+            rotateX(4deg)
+            rotateZ(2deg)
+            translateZ(32px);
+    }
+
+    .seller-scene__connections,
+    .seller-stock-connection {
+        display: none;
     }
 
     .hero-showcase__arc {
