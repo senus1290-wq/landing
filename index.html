@@ -8,14 +8,46 @@
 
     <meta
         name="description"
-        content="TrafficMarket — продвижение товаров на Ozon"
+        content="TrafficMarket — продвижение товаров на Ozon: анализ карточки, SEO, инфографика, работа с репутацией и комплексное сопровождение продавцов."
     >
 
-    <title>TrafficMarket — отзывы для продавцов OZON</title>
+    <title>TrafficMarket — продвижение товаров на Ozon</title>
+
+    <style>
+        .hero.hero--motion .hero__title,
+        .hero.hero--motion .hero__description,
+        .hero.hero--motion .hero__buttons,
+        .hero.hero--motion .hero__advantages,
+        .hero.hero--motion .seller-scene__macbook,
+        .hero.hero--motion .hero-product {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
 
     <!-- Подключаем CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon-9.png">
+
+    <noscript>
+        <style>
+            .hero.hero--motion .hero__title,
+            .hero.hero--motion .hero__description,
+            .hero.hero--motion .hero__buttons,
+            .hero.hero--motion .hero__advantages,
+            .hero.hero--motion .seller-scene__macbook,
+            .hero.hero--motion .hero-product {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+                animation: none !important;
+            }
+
+            .hero.hero--motion .seller-scene__macbook {
+                transform: translate(-50%, -50%) !important;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body>
@@ -24,43 +56,53 @@
     <header class="header">
         <div class="container header__content">
 
-            <a href="#main" class="logo">
-                <span class="logo__mark">
-                    <img
-                        src="images/logo.png"
-                        alt=""
-                        class="logo__image"
-                    >
-                </span>
-
-                <span class="logo__name">
-                    Traffic<span>Market</span>
-                </span>
+            <a href="#main" class="header-logo">
+                <img
+                    src="images/Header/logo + text.png"
+                    alt="TrafficMarket"
+                    width="255"
+                    height="44"
+                    decoding="async"
+                >
             </a>
 
             <nav class="navigation">
-                <a href="#services">Услуги</a>
-                <a href="#advantages">Преимущества</a>
                 <a href="#work">Как мы работаем</a>
+                <a href="#additional-services">Услуги</a>
+                <a href="#cases">Кейсы</a>
+                <a href="#prices">Цены</a>
                 <a href="#reviews">Отзывы</a>
-                <a href="#contacts">Контакты</a>
             </nav>
 
-            <a
-                class="header__phone"
-                href="tel:+79605097599"
-            >
-                +7&nbsp;(960)&nbsp;509-75-99
-            </a>
+            <div class="header__actions">
 
-            <a
-                href="https://t.me/ozon_traffic?text=Здравствуйте.%20Меня%20заинтересовал%20ваш%20сайт%2C%20хочу%20получить%20консультацию%20по%20своему%20кабинету%20и%20узнать%20подробности%20сотрудничества!"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button button--header"
-            >
-                Связаться в Telegram
-            </a>
+                <a
+                    href="https://t.me/trafficmarkett"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="header-social"
+                    aria-label="Telegram канал TrafficMarket"
+                >
+                    <img
+                        class="header-telegram-icon"
+                        src="images/Header/telegram-icon.png"
+                        alt="Telegram"
+                        width="52"
+                        height="52"
+                        decoding="async"
+                    >
+                </a>
+
+                <a
+                    href="https://t.me/ozon_traffic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button--header"
+                >
+                    Получить консультацию
+                </a>
+
+            </div>
 
         </div>
     </header>
@@ -69,25 +111,25 @@
     <main>
 
         <!-- ПЕРВЫЙ ЭКРАН -->
-        <section class="hero" id="main">
+        <section class="hero hero--motion" id="main">
 
             <div class="container hero__content">
         
                 <!-- Левая часть -->
                 <div class="hero__information">
         
-                    <div class="hero__label">
-                        Продвижение товаров на Ozon
-                    </div>
-        
                     <h1 class="hero__title">
-                        Вложились в товар,
-                        а продаж на Ozon <span>мало?</span>
+                        Отзывы на OZON:<br>
+                        <span>больше доверия — выше конверсия</span>
                     </h1>
         
                     <p class="hero__description">
-                        Разберём карточку и конкурентов, найдём, где теряются покупатели,
-                        и составим конкретный план продвижения.
+                        Помогаем повысить доверие к вашим товарам на Ozon с помощью естественных
+                        отзывов и оценок. Продуманное размещение помогает сформировать
+                        положительную репутацию карточки, сделать её привлекательнее как для новых
+                        покупателей, так и для внутренних алгоритмов OZON.
+                        Комплексная работа с отзывами способствует росту конверсии и помогает
+                        карточке увереннее конкурировать в своей категории.
                     </p>
         
                     <div class="hero__buttons">
@@ -97,7 +139,7 @@
                             target="_blank"
                             class="button"
                         >
-                            Разобрать мою карточку
+                            Заказать отзывы
                         </a>
         
                         <a
@@ -126,121 +168,36 @@
 
                     <div class="hero-showcase">
 
-                        <div class="hero-showcase__glow" aria-hidden="true"></div>
-                        <div class="hero-showcase__arc" aria-hidden="true"></div>
-
-                        <span class="hero-showcase__spark hero-showcase__spark--1" aria-hidden="true"></span>
-                        <span class="hero-showcase__spark hero-showcase__spark--2" aria-hidden="true"></span>
-                        <span class="hero-showcase__spark hero-showcase__spark--3" aria-hidden="true"></span>
-
                         <div class="seller-scene">
 
-                            <svg
-                                class="seller-scene__connections"
-                                viewBox="0 0 760 660"
-                                preserveAspectRatio="none"
-                                aria-hidden="true"
+                            <img
+                                class="seller-scene__macbook"
+                                src="images/Header/macbook-mockup-1.png"
+                                alt="Кабинет продавца Ozon Seller"
+                                width="1400"
+                                height="900"
+                                decoding="async"
                             >
-                                <defs>
-                                    <marker
-                                        id="seller-arrow"
-                                        markerWidth="7"
-                                        markerHeight="7"
-                                        refX="6"
-                                        refY="3.5"
-                                        orient="auto"
-                                        markerUnits="userSpaceOnUse"
-                                    >
-                                        <path
-                                            d="M0.5,1 L6,3.5 L0.5,6"
-                                            fill="none"
-                                            stroke="rgba(93, 162, 255, 0.92)"
-                                            stroke-width="1.6"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </marker>
-                                </defs>
 
-                                <path
-                                    class="seller-connection seller-connection--sales"
-                                    d="M 538 165
-                                       C 605 92, 652 72, 558 58
-                                       C 448 44, 322 78, 284 148"
-                                    marker-end="url(#seller-arrow)"
-                                />
-                            </svg>
+                            <div class="hero-product hero-product--fan">
+                                <img src="images/Header/vent.png" alt="" width="320" height="320" loading="eager" decoding="async">
+                            </div>
 
-                            <figure class="seller-dashboard">
+                            <div class="hero-product hero-product--controller">
+                                <img src="images/Header/jostik.png" alt="" width="320" height="320" loading="eager" decoding="async">
+                            </div>
 
-                                <img
-                                    src="images/seller-dashboard.png"
-                                    alt="Кабинет продавца Ozon Seller"
-                                    width="1200"
-                                    height="675"
-                                >
+                            <div class="hero-product hero-product--headphones">
+                                <img src="images/Header/naushniki.png" alt="" width="320" height="320" loading="eager" decoding="async">
+                            </div>
 
-                                <svg
-                                    class="seller-stock-connection"
-                                    viewBox="0 0 180 210"
-                                    preserveAspectRatio="none"
-                                    aria-hidden="true"
-                                >
-                                    <defs>
-                                        <marker
-                                            id="seller-arrow-stock"
-                                            markerWidth="7"
-                                            markerHeight="7"
-                                            refX="6"
-                                            refY="3.5"
-                                            orient="auto"
-                                            markerUnits="userSpaceOnUse"
-                                        >
-                                            <path
-                                                d="M0.5,1 L6,3.5 L0.5,6"
-                                                fill="none"
-                                                stroke="rgba(93, 162, 255, 0.95)"
-                                                stroke-width="1.6"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </marker>
-                                    </defs>
+                            <div class="hero-product hero-product--drill">
+                                <img src="images/Header/drell.png" alt="" width="320" height="320" loading="eager" decoding="async">
+                            </div>
 
-                                    <path
-                                        class="seller-connection seller-connection--stock"
-                                        d="M 178 8
-                                           C 132 12, 92 26, 66 58
-                                           C 42 88, 38 126, 52 154
-                                           C 66 180, 94 176, 118 154
-                                           C 132 143, 144 135, 154 130"
-                                        marker-end="url(#seller-arrow-stock)"
-                                    />
-                                </svg>
-
-                            </figure>
-
-                            <figure class="seller-sales">
-
-                                <img
-                                    src="images/seller-sales.png"
-                                    alt="Низкая динамика продаж товара на Ozon"
-                                    width="640"
-                                    height="480"
-                                >
-
-                            </figure>
-
-                            <figure class="seller-stock">
-
-                                <img
-                                    src="images/seller-stock.png"
-                                    alt="Остатки товаров на складах Ozon"
-                                    width="900"
-                                    height="520"
-                                >
-
-                            </figure>
+                            <div class="hero-product hero-product--sneakers">
+                                <img src="images/Header/crossovki.png" alt="" width="320" height="320" loading="eager" decoding="async">
+                            </div>
 
                         </div>
 
@@ -253,622 +210,1665 @@
         </section>
 
 
-        <!-- УСЛУГИ -->
-        <section class="section" id="services">
+        <!-- КАК РАБОТАЮТ ОТЗЫВЫ -->
+        <section class="section reviews-explainer" id="problems">
             <div class="container">
 
-                <div class="section-heading">
-                    <h2>
-                        Продвижение карточек через системную работу и доверие
+                <h2 class="reviews-explainer__heading">
+                    Как работают отзывы на Ozon<br>
+                    и почему они важны для продвижения
+                </h2>
+
+                <p class="reviews-explainer__description">
+                    Отзывы и оценки помогают покупателю быстрее понять, можно ли доверять товару.
+                    Чем убедительнее выглядит репутация карточки, тем проще ей конкурировать
+                    за внимание и заказы.
+                </p>
+
+                <div class="reviews-info">
+
+                    <article class="review-info-card">
+
+                        <div class="review-info-card__header">
+
+                            <div class="review-info-card__icon" aria-hidden="true">
+                                <svg
+                                    width="38"
+                                    height="38"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M4 10h16v9H4v-9z"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M6 10V8.2L8 4h8l2 4.2V10"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M9 14h6"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+
+                            <h3 class="review-info-card__title">
+                                Как работают отзывы на Ozon?
+                            </h3>
+
+                        </div>
+
+                        <ul class="review-info-card__list">
+
+                            <li class="review-info-card__item">
+                                Покупатель видит оценки и опыт других покупателей
+                            </li>
+                            <li class="review-info-card__item">
+                                Отзывы помогают заранее снять часть сомнений о товаре
+                            </li>
+                            <li class="review-info-card__item">
+                                Фото, видео и подробные комментарии делают карточку информативнее
+                            </li>
+                            <li class="review-info-card__item">
+                                Сформированная репутация помогает товару выглядеть убедительнее
+                                среди конкурентов
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="review-info-card">
+
+                        <div class="review-info-card__header">
+
+                            <div class="review-info-card__icon" aria-hidden="true">
+                                <svg
+                                    width="38"
+                                    height="38"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M12 3l7.5 3.75V11c0 4.55-3.1 8.35-7.5 9.25C7.6 19.35 4.5 15.55 4.5 11V6.75L12 3z"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 8.25l1.35 2.73 3.02.44-2.18 2.13.52 3.01L12 15.2l-2.71 1.36.52-3.01-2.18-2.13 3.02-.44L12 8.25z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+
+                            <h3 class="review-info-card__title">
+                                Почему отзывы важны для продвижения?
+                            </h3>
+
+                        </div>
+
+                        <ul class="review-info-card__list">
+
+                            <li class="review-info-card__item">
+                                Повышают доверие к товару при первом знакомстве с карточкой
+                            </li>
+                            <li class="review-info-card__item">
+                                Помогают покупателю сравнивать предложение с конкурентами
+                            </li>
+                            <li class="review-info-card__item">
+                                Сильная репутация может положительно влиять на конверсию карточки
+                            </li>
+                            <li class="review-info-card__item">
+                                Отзывы дают дополнительную информацию о товаре и его использовании
+                            </li>
+                            <li class="review-info-card__item">
+                                Хороший рейтинг делает предложение визуально привлекательнее в выдаче
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- КОМУ ПОДОЙДЁТ СЕРВИС -->
+        <section class="section seller-types" id="seller-types">
+            <div class="container">
+
+                <header class="seller-types__header">
+                    <h2 class="seller-types__heading">
+                        Кому подойдёт сервис
                     </h2>
-                    
-                    <p>
-                        Основной акцент — работа с репутацией.
-                        SEO, инфографика и запуск под ключ усиливают результат.
+                    <p class="seller-types__description">
+                        Работаем как с новыми товарами, которым важно сформировать первые отзывы,
+                        так и с карточками, которым требуется дальнейшая работа с рейтингом и репутацией.
+                    </p>
+                </header>
+
+                <div class="seller-types__grid">
+
+                    <article class="seller-type-card">
+                        <div class="seller-type-card__media">
+                            <img
+                                class="seller-type-card__image"
+                                src="images/Block 2/old-seller.png"
+                                alt="Опытный селлер на Ozon — работа с рейтингом и отзывами"
+                                width="480"
+                                height="320"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="seller-type-card__body">
+                            <h3 class="seller-type-card__title">Опытные селлеры на Ozon</h3>
+                            <p class="seller-type-card__description">
+                                Отзывы помогают укреплять репутацию действующей карточки, поддерживать высокий рейтинг
+                                и повышать доверие новых покупателей к товару.
+                            </p>
+                            <p class="seller-type-card__subtitle">Поможет:</p>
+                            <ul class="seller-type-card__list">
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>укреплять рейтинг и репутацию карточки</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>работать с негативной обратной связью</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>повышать доверие новых покупателей</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>дополнять карточку отзывами с фото и видео</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="seller-type-card">
+                        <div class="seller-type-card__media">
+                            <img
+                                class="seller-type-card__image"
+                                src="images/Block 2/new-seller.png"
+                                alt="Новичок на Ozon — первые отзывы и доверие к карточке"
+                                width="480"
+                                height="320"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="seller-type-card__body">
+                            <h3 class="seller-type-card__title">Новички на Ozon</h3>
+                            <p class="seller-type-card__description">
+                                Если товар только появился на маркетплейсе, первые отзывы помогают сформировать
+                                первоначальное доверие к карточке и сделать предложение убедительнее для покупателей.
+                            </p>
+                            <p class="seller-type-card__subtitle">Поможет:</p>
+                            <ul class="seller-type-card__list">
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>сформировать первые оценки и отзывы</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>повысить доверие к новому товару</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>сделать карточку информативнее</span>
+                                </li>
+                                <li class="seller-type-card__item">
+                                    <span class="seller-type-card__check" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>быстрее сформировать первоначальную репутацию</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- УСЛУГИ ПО ОТЗЫВАМ -->
+        <section class="section review-services-section" id="review-services">
+            <div class="container">
+
+                <h2 class="review-services-heading">
+                    Наши услуги по работе с отзывами на Ozon
+                </h2>
+
+                <p class="review-services-heading__description">
+                    Подбираем формат работы под задачу вашей карточки — от базовой работы с отзывами
+                    до сопровождения репутации. Фото, видео и содержание отзывов согласовываем заранее.
+                </p>
+
+                <div class="review-services-grid">
+
+                    <article class="review-service-card">
+
+                        <div class="review-service-card__top">
+
+                            <div class="review-service-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-service-card__icon-image"
+                                    src="images/Block 3/otsivi-1-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <div class="review-service-card__content">
+                                <h3 class="review-service-card__title">
+                                    Естественные отзывы
+                                </h3>
+                                <p class="review-service-card__text">
+                                    Работаем с отзывами и оценками для постепенного формирования репутации
+                                    карточки. Содержание и темп размещения подбираем с учётом товара
+                                    и текущей ситуации.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="review-service-card__button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать отзывы
+                        </a>
+
+                    </article>
+
+
+                    <article class="review-service-card">
+
+                        <div class="review-service-card__top">
+
+                            <div class="review-service-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-service-card__icon-image"
+                                    src="images/Block 3/otsivi-2-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <div class="review-service-card__content">
+                                <h3 class="review-service-card__title">
+                                    Работа с новыми карточками
+                                </h3>
+                                <p class="review-service-card__text">
+                                    Помогаем сформировать первые оценки и обратную связь для товаров,
+                                    которым важно быстрее набрать первоначальную репутацию
+                                    и доверие покупателей.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="review-service-card__button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать отзывы
+                        </a>
+
+                    </article>
+
+
+                    <article class="review-service-card">
+
+                        <div class="review-service-card__top">
+
+                            <div class="review-service-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-service-card__icon-image"
+                                    src="images/Block 3/otsivi-3-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <div class="review-service-card__content">
+                                <h3 class="review-service-card__title">
+                                    Отзывы с фото и видео
+                                </h3>
+                                <p class="review-service-card__text">
+                                    Отзывы с дополнительным визуальным контентом помогают подробнее показать
+                                    товар и сделать обратную связь покупателей более информативной.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="review-service-card__button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать отзывы
+                        </a>
+
+                    </article>
+
+
+                    <article class="review-service-card">
+
+                        <div class="review-service-card__top">
+
+                            <div class="review-service-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-service-card__icon-image"
+                                    src="images/Block 3/otsivi-4-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <div class="review-service-card__content">
+                                <h3 class="review-service-card__title">
+                                    Работа с репутацией
+                                </h3>
+                                <p class="review-service-card__text">
+                                    Анализируем текущий рейтинг и обратную связь, определяем проблемные точки
+                                    и выстраиваем дальнейшую работу с репутацией карточки.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="review-service-card__button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать отзывы
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ГАРАНТИИ -->
+        <section class="reviews-guarantees" id="guarantees">
+            <div class="container">
+
+                <div class="reviews-guarantees__panel">
+
+                    <h2 class="reviews-guarantees__heading">
+                        Безопасная работа с отзывами —<br>
+                        наши гарантии
+                    </h2>
+
+                    <p class="reviews-guarantees__description">
+                        Продумываем темп и формат работы под конкретную карточку, согласовываем материалы
+                        заранее и остаёмся на связи на всех этапах. Если опубликованный отзыв будет удалён,
+                        бесплатно заменим его без дополнительной оплаты.
                     </p>
 
-                </div>
+                    <div class="reviews-guarantees__grid">
 
-                <div class="services">
+                        <article class="review-guarantee-card">
 
-                    <article class="service-card service-card--main">
-                
-                        <div class="service-card__icon">
-                            ⭐
-                        </div>
-                
-                        <h3>
-                            Работа с репутацией
-                        </h3>
-                
-                        <p>
-                            Выстраиваем стратегию публикации отзывов,
-                            помогаем повысить доверие к товару
-                            и постепенно укрепляем рейтинг карточки.
-                        </p>
-                
-                        <strong>
-                            от 120 ₽
-                        </strong>
-                
-                    </article>
-                
-                
-                    <article class="service-card">
-                
-                        <div class="service-card__icon">
-                            🔍
-                        </div>
-                
-                        <h3>
-                            SEO-оптимизация карточки
-                        </h3>
-                
-                        <p>
-                            Анализируем карточку и конкурентов,
-                            прорабатываем название, описание,
-                            характеристики и ключевые запросы.
-                        </p>
-                
-                        <strong>
-                            от 3 500 ₽
-                        </strong>
-                
-                    </article>
-                
-                
-                    <article class="service-card">
-                
-                        <div class="service-card__icon">
-                            🎨
-                        </div>
-                
-                        <h3>
-                            Инфографика
-                        </h3>
-                
-                        <p>
-                            Создаём продающий листинг после анализа конкурентов:
-                            продумываем структуру, смыслы и визуальную подачу.
-                        </p>
-                
-                        <strong>
-                            от 8 000 ₽
-                        </strong>
-                
-                    </article>
-                
-                
-                    <article class="service-card">
-                
-                        <div class="service-card__icon">
-                            🚀
-                        </div>
-                
-                        <h3>
-                            Запуск товара под ключ
-                        </h3>
-                
-                        <p>
-                            Полностью сопровождаем запуск:
-                            аналитика, оформление карточки,
-                            SEO, инфографика и стратегия работы с отзывами.
-                        </p>
-                
-                        <strong>
-                            Индивидуально
-                        </strong>
-                
-                    </article>
-                
+                            <div class="review-guarantee-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-guarantee-card__icon-image"
+                                    src="images/Block 4/garantii-1-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <h3 class="review-guarantee-card__title">
+                                Продуманный подход
+                            </h3>
+
+                            <p class="review-guarantee-card__text">
+                                Подбираем темп и формат работы индивидуально под товар, чтобы размещение
+                                выглядело последовательно и естественно.
+                            </p>
+
+                            <span class="review-guarantee-card__check" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M6 12.5l3.5 3.5L18 8"
+                                        stroke="currentColor"
+                                        stroke-width="2.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+
+                        </article>
+
+
+                        <article class="review-guarantee-card">
+
+                            <div class="review-guarantee-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-guarantee-card__icon-image"
+                                    src="images/Block 4/garantii-2-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <h3 class="review-guarantee-card__title">
+                                Без резких действий
+                            </h3>
+
+                            <p class="review-guarantee-card__text">
+                                Не используем одинаковый сценарий для всех карточек. Объём и динамику работы
+                                согласовываем с учётом текущей ситуации.
+                            </p>
+
+                            <span class="review-guarantee-card__check" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M6 12.5l3.5 3.5L18 8"
+                                        stroke="currentColor"
+                                        stroke-width="2.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+
+                        </article>
+
+
+                        <article class="review-guarantee-card">
+
+                            <div class="review-guarantee-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-guarantee-card__icon-image"
+                                    src="images/Block 4/garantii-3-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <h3 class="review-guarantee-card__title">
+                                Замена удалённых отзывов
+                            </h3>
+
+                            <p class="review-guarantee-card__text">
+                                Если опубликованный отзыв будет удалён, бесплатно заменим его
+                                без дополнительной оплаты.
+                            </p>
+
+                            <span class="review-guarantee-card__check" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M6 12.5l3.5 3.5L18 8"
+                                        stroke="currentColor"
+                                        stroke-width="2.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+
+                        </article>
+
+
+                        <article class="review-guarantee-card">
+
+                            <div class="review-guarantee-card__icon" aria-hidden="true">
+                                <img
+                                    class="review-guarantee-card__icon-image"
+                                    src="images/Block 4/garantii-4-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+
+                            <h3 class="review-guarantee-card__title">
+                                Всегда на связи
+                            </h3>
+
+                            <p class="review-guarantee-card__text">
+                                Бесплатно консультируем по ходу работы, отвечаем на вопросы
+                                и помогаем разобраться в ситуации с карточкой.
+                            </p>
+
+                            <span class="review-guarantee-card__check" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M6 12.5l3.5 3.5L18 8"
+                                        stroke="currentColor"
+                                        stroke-width="2.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
 
-        <!-- ПРЕИМУЩЕСТВА -->
-
-        <section
-            class="advantages-section"
-            id="advantages"
-        >
-
-            <div class="container">
-
-                <div class="section-heading section-heading--white">
-
-                    <h2>
-                        Почему выбирают нас?
-                    </h2>
-
-                </div>
-
-
-                <div class="advantages">
-
-                    <article class="advantage">
-
-                        <div class="advantage__icon">
-                            ✓
-                        </div>
-
-                        <h3>
-                            Безопасный подход
-                        </h3>
-
-                        <p>
-                            Работаем аккуратно
-                            и заранее объясняем
-                            весь процесс.
-                        </p>
-
-                    </article>
-
-
-                    <article class="advantage">
-
-                        <div class="advantage__icon">
-                            ⚡
-                        </div>
-
-                        <h3>
-                            Быстрый старт
-                        </h3>
-
-                        <p>
-                            Не затягиваем
-                            согласование
-                            и быстро приступаем
-                            к работе.
-                        </p>
-
-                    </article>
-
-
-                    <article class="advantage">
-
-                        <div class="advantage__icon">
-                            ◇
-                        </div>
-
-                        <h3>
-                            Контроль качества
-                        </h3>
-
-                        <p>
-                            Проверяем результат
-                            на каждом этапе.
-                        </p>
-
-                    </article>
-
-
-                    <article class="advantage">
-
-                        <div class="advantage__icon">
-                            ◉
-                        </div>
-
-                        <h3>
-                            Поддержка
-                        </h3>
-
-                        <p>
-                            Всегда остаёмся
-                            на связи
-                            и отвечаем
-                            на вопросы.
-                        </p>
-
-                    </article>
-
-
-                    <article class="advantage">
-
-                        <div class="advantage__icon">
-                            ◎
-                        </div>
-
-                        <h3>
-                            Индивидуальная стратегия
-                        </h3>
-
-                        <p>
-                            Подбираем решение
-                            именно под ваш товар,
-                            а не используем шаблоны.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- КАК МЫ РАБОТАЕМ -->
-
-        <section
-            class="section"
-            id="work"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <h2>
-                        Как проходит работа с репутацией
-                    </h2>
-
-                    <p>
-                        От анализа карточки до контролируемого размещения отзывов и отслеживания результата.
-                    </p>
-
-                </div>
-
-
-                <div class="steps">
-
-                    <article class="step">
-
-                        <span class="step__number">
-                            1
-                        </span>
-
-                        <div class="step__icon">
-                            🔍
-                        </div>
-
-                        <h3>
-                            Анализ карточки
-                        </h3>
-
-                        <p>
-                            Изучаем текущий рейтинг, количество отзывов, динамику оценок и ситуацию у конкурентов.
-                        </p>
-
-                    </article>
-
-
-                    <article class="step">
-
-                        <span class="step__number">
-                            2
-                        </span>
-
-                        <div class="step__icon">
-                            🗓️
-                        </div>
-
-                        <h3>
-                            Стратегия публикаций
-                        </h3>
-
-                        <p>
-                            Рассчитываем объём, формат и последовательность размещения отзывов без резких скачков.
-                        </p>
-
-                    </article>
-
-
-                    <article class="step">
-
-                        <span class="step__number">
-                            3
-                        </span>
-
-                        <div class="step__icon">
-                            ⭐
-                        </div>
-
-                        <h3>
-                            Работа с отзывами
-                        </h3>
-
-                        <p>
-                            Запускаем публикации по согласованному плану и контролируем выход каждого отзыва.
-                        </p>
-
-                    </article>
-
-
-                    <article class="step">
-
-                        <span class="step__number">
-                            4
-                        </span>
-
-                        <div class="step__icon">
-                            🛡️
-                        </div>
-
-                        <h3>
-                            Контроль репутации
-                        </h3>
-
-                        <p>
-                            Отслеживаем рейтинг карточки и корректируем дальнейшую работу по результатам.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
         <!-- ОТЗЫВЫ КЛИЕНТОВ -->
 
         <section class="section reviews-section" id="reviews">
 
             <div class="container">
 
-                <div class="section-heading">
-
-                    <span class="section-heading__label">
-                        Реальные результаты
-                    </span>
-
-                    <h2>
+                <header class="reviews-section__header">
+                    <h2 class="reviews-section__title">
                         Отзывы наших клиентов
                     </h2>
-
-                    <p>
-                        Скриншоты переписок с клиентами после выполнения заказов
+                    <p class="reviews-section__subtitle">
+                        Реальные отзывы продавцов Ozon, с которыми мы уже работаем.
+                        Они рассказывают о своих результатах и отмечают качество нашей работы.
                     </p>
+                </header>
 
-                </div>
+                <div class="reviews-section__stage">
 
+                    <div class="reviews-section__viewport">
 
-                <div class="telegram-reviews">
+                        <div class="reviews-section__track">
 
-                    <article class="telegram-review">
+                            <div class="reviews-section__group">
 
-                        <div class="telegram-review__top">
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-1.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-2.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-3.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-4.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-5.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-6.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-7.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="851" height="1847">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-8.png" alt="Скриншот переписки с клиентом в Telegram" loading="lazy" decoding="async" width="852" height="1847">
+                                </div>
 
-                            <div class="telegram-review__icon">
-                                ✈
                             </div>
 
-                            <div>
-                                <strong>Отзыв из Telegram</strong>
-                                <span>Рост рейтинга товара</span>
-                            </div>
+                            <div class="reviews-section__group" aria-hidden="true">
 
-                        </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-1.png" alt="" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-2.png" alt="" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-3.png" alt="" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-4.png" alt="" loading="lazy" decoding="async" width="853" height="1844">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-5.png" alt="" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-6.png" alt="" loading="lazy" decoding="async" width="852" height="1846">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-7.png" alt="" loading="lazy" decoding="async" width="851" height="1847">
+                                </div>
+                                <div class="reviews-section__shot">
+                                    <img src="images/Block 5/feedback-8.png" alt="" loading="lazy" decoding="async" width="852" height="1847">
+                                </div>
 
-                        <button
-                            class="telegram-review__image"
-                            type="button"
-                            aria-label="Открыть отзыв клиента"
-                        >
-                            <img
-                                src="images/review-1.jpg"
-                                alt="Переписка с клиентом о росте рейтинга товара"
-                            >
-                        </button>
-
-                        <div class="telegram-review__bottom">
-                            <span class="telegram-review__status">
-                                ✓ Рейтинг вырос до 4.7
-                            </span>
-
-                            <span>
-                                Telegram
-                            </span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="telegram-review">
-
-                        <div class="telegram-review__top">
-
-                            <div class="telegram-review__icon">
-                                ✈
-                            </div>
-
-                            <div>
-                                <strong>Отзыв из Telegram</strong>
-                                <span>Выполнение заказа в срок</span>
-                            </div>
-
-                        </div>
-
-                        <button
-                            class="telegram-review__image"
-                            type="button"
-                            aria-label="Открыть отзыв клиента"
-                        >
-                            <img
-                                src="images/review-2.jpg"
-                                alt="Переписка с клиентом о выполненном заказе"
-                            >
-                        </button>
-
-                        <div class="telegram-review__bottom">
-                            <span class="telegram-review__status">
-                                ✓ 875 отзывов выполнено
-                            </span>
-
-                            <span>
-                                Telegram
-                            </span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="telegram-review">
-
-                        <div class="telegram-review__top">
-
-                            <div class="telegram-review__icon">
-                                ✈
-                            </div>
-
-                            <div>
-                                <strong>Отзыв из Telegram</strong>
-                                <span>Быстрая работа команды</span>
                             </div>
 
                         </div>
 
-                        <button
-                            class="telegram-review__image"
-                            type="button"
-                            aria-label="Открыть отзыв клиента"
-                        >
-                            <img
-                                src="images/review-3.jpg"
-                                alt="Переписка с клиентом о скорости работы"
-                            >
-                        </button>
-
-                        <div class="telegram-review__bottom">
-                            <span class="telegram-review__status">
-                                ✓ Клиент доволен результатом
-                            </span>
-
-                            <span>
-                                Telegram
-                            </span>
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-                <div class="reviews-note">
-
-                    <div class="reviews-note__icon">
-                        ✓
                     </div>
 
-                    <p>
-                        Все отзывы показаны в формате реальных переписок.
-                        Весь чаттинг происходит в Telegram.
-                    </p>
+                </div>
 
+                <div class="reviews-section__actions">
+                    <a
+                        class="reviews-section__more"
+                        href="https://t.me/trafficmarkett"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Больше отзывов
+                    </a>
                 </div>
 
             </div>
 
         </section>
 
-        <!-- КОНТАКТЫ -->
 
-        <section
-            class="section"
-            id="contacts"
-        >
-
+        <!-- КАК ЗАКАЗАТЬ ОТЗЫВЫ -->
+        <section class="section work-process-section" id="work">
             <div class="container">
 
-                <div class="section-heading">
-
-                    <h2>
-                        Контакты
+                <header class="work-process__header">
+                    <h2 class="work-process__title">
+                        Как заказать отзывы<br class="work-process__title-break">
+                        на товары на Ozon
                     </h2>
-
-                    <p>
-                        Свяжитесь с нами удобным способом — ответим и обсудим работу с карточкой.
+                    <p class="work-process__subtitle">
+                        Пять понятных этапов — от первого обращения до контроля результата.
+                        Вы всегда понимаете, что происходит и на каком этапе находится работа.
                     </p>
+                </header>
+
+                <div class="work-process__layout">
+
+                    <ol class="work-process__timeline">
+
+                        <li class="work-process__step">
+                            <span class="work-process__number">01</span>
+                            <div class="work-process__line" aria-hidden="true">
+                                <span class="work-process__dot"></span>
+                                <span class="work-process__line-dash"></span>
+                            </div>
+                            <div class="work-process__icon" aria-hidden="true">
+                                <img
+                                    class="work-process__icon-image"
+                                    src="images/Block 6/how-1-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="work-process__card">
+                                <h3 class="work-process__card-title">Оставляете заявку</h3>
+                                <p class="work-process__card-text">
+                                    Расскажите, с какой карточкой нужно поработать. Можно оставить заявку прямо
+                                    на сайте или сразу написать нашему менеджеру в Telegram.
+                                </p>
+                                <div class="work-process__actions">
+                                    <a class="work-process__btn work-process__btn--primary" href="#request">
+                                        Оставить заявку
+                                    </a>
+                                    <a
+                                        class="work-process__btn work-process__btn--telegram"
+                                        href="https://t.me/ozon_traffic"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                            <path d="M21.5 4.5L2.8 11.2c-.9.35-.9 1.65 0 2l4.9 1.8 1.9 5.8c.3.9 1.45 1.05 2 .25l2.7-3.5 5.1 3.8c.75.55 1.8.1 2-0.85L22.6 6.2c.2-1-.65-1.85-1.6-1.7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                            <path d="M8 13l9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        Написать в Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="work-process__step">
+                            <span class="work-process__number">02</span>
+                            <div class="work-process__line" aria-hidden="true">
+                                <span class="work-process__dot"></span>
+                                <span class="work-process__line-dash"></span>
+                            </div>
+                            <div class="work-process__icon" aria-hidden="true">
+                                <img
+                                    class="work-process__icon-image"
+                                    src="images/Block 6/how-2-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="work-process__card">
+                                <h3 class="work-process__card-title">Анализируем запрос</h3>
+                                <p class="work-process__card-text">
+                                    Изучаем вашу карточку, рейтинг и текущую ситуацию. Уточняем задачу
+                                    и определяем подходящий формат работы.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="work-process__step">
+                            <span class="work-process__number">03</span>
+                            <div class="work-process__line" aria-hidden="true">
+                                <span class="work-process__dot"></span>
+                                <span class="work-process__line-dash"></span>
+                            </div>
+                            <div class="work-process__icon" aria-hidden="true">
+                                <img
+                                    class="work-process__icon-image"
+                                    src="images/Block 6/how-3-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="work-process__card">
+                                <h3 class="work-process__card-title">Составляем план работы</h3>
+                                <p class="work-process__card-text">
+                                    Согласовываем объём, формат и сроки. Формируем понятную схему размещения
+                                    под конкретную карточку.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="work-process__step">
+                            <span class="work-process__number">04</span>
+                            <div class="work-process__line" aria-hidden="true">
+                                <span class="work-process__dot"></span>
+                                <span class="work-process__line-dash"></span>
+                            </div>
+                            <div class="work-process__icon" aria-hidden="true">
+                                <img
+                                    class="work-process__icon-image"
+                                    src="images/Block 6/how-4-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="work-process__card">
+                                <h3 class="work-process__card-title">Запускаем работу</h3>
+                                <p class="work-process__card-text">
+                                    Запускаем согласованный процесс и последовательно выполняем план, сохраняя
+                                    естественный темп размещения.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="work-process__step">
+                            <span class="work-process__number">05</span>
+                            <div class="work-process__line" aria-hidden="true">
+                                <span class="work-process__dot"></span>
+                            </div>
+                            <div class="work-process__icon" aria-hidden="true">
+                                <img
+                                    class="work-process__icon-image"
+                                    src="images/Block 6/how-5-icon.png"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="work-process__card">
+                                <h3 class="work-process__card-title">Контролируем результат</h3>
+                                <p class="work-process__card-text">
+                                    Следим за состоянием опубликованных отзывов и остаёмся на связи. При необходимости
+                                    корректируем дальнейший план работы.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ol>
+
+                    <div class="work-process__visual">
+                        <div class="work-process__visual-glow" aria-hidden="true"></div>
+                        <img
+                            class="work-process__illustration"
+                            src="images/Block 6/illustration.png"
+                            alt="Пример оформления отзыва на Ozon"
+                            width="560"
+                            height="640"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
 
                 </div>
 
-                <div class="services">
+            </div>
+        </section>
 
-                    <article class="service-card">
 
-                        <div class="service-card__icon">
-                            📞
-                        </div>
+        <!-- ЦЕНЫ НА РАЗМЕЩЕНИЕ ОТЗЫВОВ -->
+        <section class="section pricing-section" id="pricing">
+            <div class="container">
 
-                        <h3>
-                            Телефон
-                        </h3>
+                <header class="pricing-header">
+                    <h2 class="pricing-header__title">
+                        Цены на размещение отзывов OZON
+                    </h2>
+                    <p class="pricing-header__subtitle">
+                        Прозрачные тарифы без скрытых платежей.<br class="pricing-header__subtitle-break">
+                        Вы платите только за результат.
+                    </p>
+                </header>
 
-                        <p>
-                            <a href="tel:+79605097599">
-                                +7 (960) 509-75-99
-                            </a>
-                        </p>
+                <div class="pricing-grid">
 
-                    </article>
-
-                    <article class="service-card">
-
-                        <div class="service-card__icon">
-                            ✉️
-                        </div>
-
-                        <h3>
-                            Email
-                        </h3>
-
-                        <p>
-                            <a href="mailto:senus1290@gmail.com">
-                                ozontraffic@mail.ru
-                            </a>
-                        </p>
-
-                    </article>
-
-                    <article class="service-card">
-
-                        <div class="service-card__icon">
-                            📢
-                        </div>
-
-                        <h3>
-                            Telegram канал
-                        </h3>
-
-                        <p>
-                            <a
-                                href="https://t.me/trafficmarkett"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                    <article class="pricing-card">
+                        <div class="pricing-card__head">
+                            <img
+                                class="pricing-card__plan-icon-img"
+                                src="images/Block 7/price-1-1.png"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
                             >
-                                @trafficmarkett
-                            </a>
-                        </p>
-
+                            <div class="pricing-card__intro">
+                                <h3 class="pricing-card__name">Стартовый</h3>
+                                <p class="pricing-card__tagline">
+                                    Для новых продавцов<br>
+                                    и теста ниши
+                                </p>
+                                <p class="pricing-card__minimum">от 100 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="pricing-card__divider" aria-hidden="true"></div>
+                        <ul class="pricing-card__services">
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 6.5h14a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H5a2 2 0 01-2-2v-7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Количественный отзыв</span>
+                                    <span class="pricing-service__desc">Пустой (без текста и фото и видео)</span>
+                                </span>
+                                <span class="pricing-price">120&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/>
+                                        <path d="M9 9h6M9 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Текстовый отзыв</span>
+                                    <span class="pricing-service__desc">Просто текст</span>
+                                </span>
+                                <span class="pricing-price">130&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                                        <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
+                                        <path d="M4 15l4-4 3 3 5-6 4 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Медиа отзыв</span>
+                                    <span class="pricing-service__desc">Текст + фото + видео</span>
+                                </span>
+                                <span class="pricing-price">150&nbsp;₽</span>
+                            </li>
+                        </ul>
+                        <a
+                            class="pricing-button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать
+                        </a>
                     </article>
 
-                    <article class="service-card">
-
-                        <div class="service-card__icon">
-                            💬
-                        </div>
-
-                        <h3>
-                            Менеджер
-                        </h3>
-
-                        <p>
-                            <a
-                                href="https://t.me/ozon_traffic"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                    <article class="pricing-card pricing-card--featured">
+                        <span class="pricing-badge">🔥 Популярный</span>
+                        <div class="pricing-card__head">
+                            <img
+                                class="pricing-card__plan-icon-img"
+                                src="images/Block 7/price-1-2.png"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
                             >
-                                @ozon_traffic
-                            </a>
-                        </p>
+                            <div class="pricing-card__intro">
+                                <h3 class="pricing-card__name">Оптимальный</h3>
+                                <p class="pricing-card__tagline">
+                                    Для стабильного роста<br>
+                                    и увеличения рейтинга
+                                </p>
+                                <p class="pricing-card__minimum">от 500 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="pricing-card__divider" aria-hidden="true"></div>
+                        <ul class="pricing-card__services">
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon pricing-service__icon--featured" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 6.5h14a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H5a2 2 0 01-2-2v-7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Количественный отзыв</span>
+                                    <span class="pricing-service__desc">Пустой (без текста и фото и видео)</span>
+                                </span>
+                                <span class="pricing-price">115&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon pricing-service__icon--featured" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/>
+                                        <path d="M9 9h6M9 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Текстовый отзыв</span>
+                                    <span class="pricing-service__desc">Просто текст</span>
+                                </span>
+                                <span class="pricing-price">125&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon pricing-service__icon--featured" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                                        <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
+                                        <path d="M4 15l4-4 3 3 5-6 4 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Медиа отзыв</span>
+                                    <span class="pricing-service__desc">Текст + фото + видео</span>
+                                </span>
+                                <span class="pricing-price">140&nbsp;₽</span>
+                            </li>
+                        </ul>
+                        <a
+                            class="pricing-button pricing-button--inverse"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать
+                        </a>
+                    </article>
 
+                    <article class="pricing-card">
+                        <div class="pricing-card__head">
+                            <img
+                                class="pricing-card__plan-icon-img"
+                                src="images/Block 7/price-1-3.png"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                            <div class="pricing-card__intro">
+                                <h3 class="pricing-card__name">Премиум</h3>
+                                <p class="pricing-card__tagline">
+                                    Для топовых продавцов<br>
+                                    и высокой конкуренции
+                                </p>
+                                <p class="pricing-card__minimum">от 1500 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="pricing-card__divider" aria-hidden="true"></div>
+                        <ul class="pricing-card__services">
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 6.5h14a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H5a2 2 0 01-2-2v-7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Количественный отзыв</span>
+                                    <span class="pricing-service__desc">Пустой (без текста и фото и видео)</span>
+                                </span>
+                                <span class="pricing-price">110&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/>
+                                        <path d="M9 9h6M9 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Текстовый отзыв</span>
+                                    <span class="pricing-service__desc">Просто текст</span>
+                                </span>
+                                <span class="pricing-price">120&nbsp;₽</span>
+                            </li>
+                            <li class="pricing-service">
+                                <span class="pricing-service__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                                        <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
+                                        <path d="M4 15l4-4 3 3 5-6 4 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="pricing-service__info">
+                                    <span class="pricing-service__title">Медиа отзыв</span>
+                                    <span class="pricing-service__desc">Текст + фото + видео</span>
+                                </span>
+                                <span class="pricing-price">130&nbsp;₽</span>
+                            </li>
+                        </ul>
+                        <a
+                            class="pricing-button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Заказать
+                        </a>
                     </article>
 
                 </div>
 
             </div>
+        </section>
 
+
+        <!-- КОМПЛЕКСНЫЕ УСЛУГИ -->
+        <section class="section additional-services" id="additional-services">
+            <div class="container">
+
+                <header class="additional-services__header">
+                    <h2 class="additional-services__heading">
+                        Не только отзывы — комплексная работа с карточкой Ozon
+                    </h2>
+                    <p class="additional-services__description">
+                        Если задача не ограничивается работой с отзывами, подключаем дополнительные инструменты:
+                        SEO, визуальную упаковку и комплексное сопровождение товара.
+                    </p>
+                </header>
+
+                <div class="additional-services__layout">
+
+                    <div class="additional-services__content">
+                        <div class="additional-services__list">
+
+                            <article class="additional-service-row">
+                                <div class="additional-service-row__icon" aria-hidden="true">
+                                    <img
+                                        class="additional-service-row__icon-img"
+                                        src="images/Block 8/price-2-1.png"
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                    >
+                                </div>
+                                <div class="additional-service-row__content">
+                                    <h3 class="additional-service-row__title">SEO-оптимизация</h3>
+                                    <p class="additional-service-row__description">
+                                        Анализируем запросы и конкурентов, прорабатываем структуру, название,
+                                        описание и характеристики карточки.
+                                    </p>
+                                </div>
+                                <p class="additional-service-row__price">от 3&nbsp;500&nbsp;₽</p>
+                            </article>
+
+                            <article class="additional-service-row">
+                                <div class="additional-service-row__icon" aria-hidden="true">
+                                    <img
+                                        class="additional-service-row__icon-img"
+                                        src="images/Block 8/price-2-2.png"
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                    >
+                                </div>
+                                <div class="additional-service-row__content">
+                                    <h3 class="additional-service-row__title">Инфографика и упаковка</h3>
+                                    <p class="additional-service-row__description">
+                                        Анализируем визуальную подачу конкурентов и создаём структуру листинга,
+                                        которая понятно раскрывает преимущества товара.
+                                    </p>
+                                </div>
+                                <p class="additional-service-row__price additional-service-row__price--accent">от 8&nbsp;000&nbsp;₽</p>
+                            </article>
+
+                            <article class="additional-service-row">
+                                <div class="additional-service-row__icon" aria-hidden="true">
+                                    <img
+                                        class="additional-service-row__icon-img"
+                                        src="images/Block 8/price-2-3.png"
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                    >
+                                </div>
+                                <div class="additional-service-row__content">
+                                    <h3 class="additional-service-row__title">Запуск товара под ключ</h3>
+                                    <p class="additional-service-row__description">
+                                        Комплексно прорабатываем запуск товара: карточку, SEO, визуал, репутацию
+                                        и дальнейший план продвижения.
+                                    </p>
+                                </div>
+                                <p class="additional-service-row__price">Индивидуально</p>
+                            </article>
+
+                        </div>
+
+                        <a
+                            class="additional-services__button"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>Получить консультацию</span>
+                        </a>
+                    </div>
+
+                    <div class="additional-services__visual">
+                        <img
+                            class="additional-services__image"
+                            src="images/Block 8/illustration-2.png"
+                            alt="Комплексная работа с карточкой товара на Ozon"
+                            width="500"
+                            height="500"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- ВОПРОСЫ И ОТВЕТЫ -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+
+                <header class="faq-header">
+                    <h2 class="faq-title">
+                        <img
+                            class="faq-question-icon"
+                            src="images/Block 10/question-mark.png"
+                            alt=""
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="faq-title__text">Вопросы и ответы</span>
+                    </h2>
+                    <p class="faq-subtitle">
+                        Собрали ответы на вопросы, которые чаще всего возникают перед началом работы.
+                    </p>
+                </header>
+
+                <div class="faq-list" data-faq-accordion>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-1"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-1"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Как проходит работа после оформления заказа?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        После обращения мы уточняем задачу, смотрим текущую ситуацию по карточке
+                                        и согласовываем формат работы. Перед запуском определяем необходимый объём,
+                                        тип отзывов и темп размещения. После согласования запускаем работу и остаёмся
+                                        на связи на всех этапах.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-2"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-2"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Какие виды отзывов можно заказать?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Можно выбрать количественные отзывы без текста, текстовые отзывы или медиа-отзывы
+                                        с текстом, фото и видео. Формат подбирается под задачу карточки и согласовывается
+                                        перед началом работы.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill2)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill2" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-3"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-3"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Можно ли использовать свои тексты и фотографии?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Да. Вы можете передать необходимые материалы, фотографии или пожелания по содержанию.
+                                        Перед публикацией детали согласовываются, чтобы итоговый формат соответствовал вашей задаче.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill3)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill3" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-4"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-4"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Как быстро начинается размещение отзывов?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Срок запуска зависит от объёма заказа и выбранного формата. После согласования задачи
+                                        мы составляем план размещения и сообщаем ориентировочные сроки до начала работы.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill4)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill4" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-5"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-5"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Что происходит, если опубликованный отзыв удалили?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Если опубликованный в рамках нашей работы отзыв будет удалён, мы проверим ситуацию
+                                        и при выполнении условий гарантии заменим его без дополнительной оплаты.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill5)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill5" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-6"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-6"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Можно ли заказать небольшое количество отзывов для теста?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Да. Можно начать с небольшого объёма, посмотреть на формат работы и после этого
+                                        при необходимости увеличить количество размещений.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill6)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill6" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3 class="faq-item__heading">
+                            <button
+                                type="button"
+                                class="faq-item__button"
+                                id="faq-question-7"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-7"
+                            >
+                                <span class="faq-item__toggle" aria-hidden="true"></span>
+                                <span class="faq-item__question">
+                                    Можно ли сначала получить консультацию?
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="faq-item__answer-wrapper" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+                            <div class="faq-item__answer-inner">
+                                <div class="faq-item__answer">
+                                    <p class="faq-item__text">
+                                        Да. Перед заказом можно написать нам в Telegram, рассказать о своей карточке и задать вопросы.
+                                        Мы посмотрим ситуацию и поможем определить подходящий формат работы.
+                                    </p>
+                                    <div class="faq-item__illustration" aria-hidden="true">
+                                        <span class="faq-item__illustration-glow"></span>
+                                        <svg class="faq-item__shield" width="88" height="96" viewBox="0 0 88 96" fill="none">
+                                            <path d="M44 6L76 18v28c0 22-14.5 40.5-32 44C26.5 86.5 12 68 12 46V18L44 6z" fill="url(#faqShieldFill7)" stroke="#1268ff" stroke-width="2"/>
+                                            <path d="M32 48l8 8 16-16" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                                <linearGradient id="faqShieldFill7" x1="44" y1="6" x2="44" y2="90" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#2c82ff"/>
+                                                    <stop offset="1" stop-color="#1268ff"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="section contact-showcase" id="contacts">
+            <div class="container">
+
+                <header class="contact-showcase__header">
+                    <h2 class="contact-showcase__title">
+                        Покажите нам свою карточку
+                    </h2>
+                    <p class="contact-showcase__lead">
+                        Отправьте ссылку на товар — обсудим текущую ситуацию
+                        и возможные точки роста.
+                    </p>
+                </header>
+
+                <div class="contact-showcase__grid">
+
+                    <article class="contact-showcase-card">
+                        <div class="contact-showcase-card__icon" aria-hidden="true">
+                            <img
+                                class="contact-showcase-card__icon-img"
+                                src="images/Block 10/contacts-1.png"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <h3 class="contact-showcase-card__title">Телефон</h3>
+                        <p class="contact-showcase-card__text">
+                            Позвоните нам, и мы быстро ответим на ваши вопросы.
+                        </p>
+                        <a class="contact-showcase-card__action" href="tel:+79605097599">
+                            <span class="contact-showcase-card__action-label">+7 (960) 509-75-99</span>
+                            <span class="contact-showcase-card__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="contact-showcase-card">
+                        <div class="contact-showcase-card__icon" aria-hidden="true">
+                            <img
+                                class="contact-showcase-card__icon-img"
+                                src="images/Block 10/contacts-2.png"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <h3 class="contact-showcase-card__title">Email</h3>
+                        <p class="contact-showcase-card__text">
+                            Напишите нам на почту — ответим в ближайшее время.
+                        </p>
+                        <a class="contact-showcase-card__action" href="mailto:ozontraffic@mail.ru">
+                            <span class="contact-showcase-card__action-label">ozontraffic@mail.ru</span>
+                            <span class="contact-showcase-card__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="contact-showcase-card">
+                        <div class="contact-showcase-card__icon" aria-hidden="true">
+                            <img
+                                class="contact-showcase-card__icon-img"
+                                src="images/Block 10/contacts-3.png"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <h3 class="contact-showcase-card__title">Telegram канал</h3>
+                        <p class="contact-showcase-card__text">
+                            Подписывайтесь — полезные материалы и кейсы по работе с Ozon.
+                        </p>
+                        <a
+                            class="contact-showcase-card__action"
+                            href="https://t.me/trafficmarkett"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="contact-showcase-card__action-label">@trafficmarkett</span>
+                            <span class="contact-showcase-card__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="contact-showcase-card">
+                        <div class="contact-showcase-card__icon" aria-hidden="true">
+                            <img
+                                class="contact-showcase-card__icon-img"
+                                src="images/Block 10/contacts-4.png"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <h3 class="contact-showcase-card__title">Написать менеджеру</h3>
+                        <p class="contact-showcase-card__text">
+                            Обсудим вашу карточку и подберём оптимальный вариант работы.
+                        </p>
+                        <a
+                            class="contact-showcase-card__action"
+                            href="https://t.me/ozon_traffic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="contact-showcase-card__action-label">@ozon_traffic</span>
+                            <span class="contact-showcase-card__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
         </section>
 
       
@@ -881,316 +1881,392 @@
 
     <footer class="footer">
 
-        <div class="container footer__content">
+        <div class="container footer__main">
 
-            <div class="footer__column footer__brand">
+            <div class="footer__top">
 
-                <a
-                    href="#main"
-                    class="footer-brand"
-                >
-
-                    <img
-                        src="images/logo.png"
-                        alt=""
-                        class="footer-brand__mark"
-                        width="48"
-                        height="48"
-                    >
-
-                    <span class="footer-brand__name">
-                        Traffic<span>Market</span>
-                    </span>
-
-                </a>
-
-                <p class="footer-brand__text">
-                    Продвижение товаров на Ozon.
-                    Работа с карточками, аналитикой
-                    и консультациями.
-                </p>
-
-                <a
-                    class="footer-social"
-                    href="https://t.me/trafficmarkett"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <span
-                        class="footer-social__icon"
-                        aria-hidden="true"
-                    ></span>
-
-                    <span class="footer-social__body">
-                        <span class="footer-social__label">
-                            Telegram канал
-                        </span>
-                        <span class="footer-social__value">
-                            @trafficmarkett
-                        </span>
-                    </span>
-
-                </a>
-
-                <a
-                    class="footer-social"
-                    href="https://t.me/ozon_traffic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <span
-                        class="footer-social__icon footer-social__icon--manager"
-                        aria-hidden="true"
-                    ></span>
-
-                    <span class="footer-social__body">
-                        <span class="footer-social__label">
-                            Менеджер
-                        </span>
-                        <span class="footer-social__value">
-                            @ozon_traffic
-                        </span>
-                    </span>
-
-                </a>
-
-            </div>
-
-
-            <div class="footer__column footer__nav">
-
-                <h3 class="footer__title">
-                    Навигация
-                </h3>
-
-                <nav
-                    class="footer-nav"
-                    aria-label="Навигация по сайту"
-                >
-
-                    <a
-                        class="footer-nav__link"
-                        href="#services"
-                    >
-                        Услуги
-                    </a>
-
-                    <a
-                        class="footer-nav__link"
-                        href="#advantages"
-                    >
-                        Преимущества
-                    </a>
-
-                    <a
-                        class="footer-nav__link"
-                        href="#work"
-                    >
-                        Как мы работаем
-                    </a>
-
-                    <a
-                        class="footer-nav__link"
-                        href="#reviews"
-                    >
-                        Отзывы
-                    </a>
-
-                    <a
-                        class="footer-nav__link"
-                        href="#contacts"
-                    >
-                        Контакты
-                    </a>
-
-                </nav>
-
-            </div>
-
-
-            <div class="footer__column footer__contacts">
-
-                <h3 class="footer__title">
-                    Контакты
-                </h3>
-
-                <ul class="footer-contact-list">
-
-                    <li class="footer-contact">
-
-                        <span
-                            class="footer-contact__icon"
-                            aria-hidden="true"
-                        >
-                            ☎
-                        </span>
-
-                        <div class="footer-contact__body">
-
-                            <span class="footer-contact__label">
-                                Телефон
-                            </span>
-
-                            <a
-                                class="footer-contact__value"
-                                href="tel:+79605097599"
+                <div class="footer__intro">
+                    <a href="#main" class="footer-logo">
+                        <span class="footer-logo__mark">
+                            <img
+                                src="images/Block 11/only-logo.png"
+                                alt=""
+                                class="footer-logo__image"
+                                width="44"
+                                height="40"
+                                loading="lazy"
+                                decoding="async"
                             >
-                                +7 (960) 509-75-99
-                            </a>
-
-                        </div>
-
-                    </li>
-
-                    <li class="footer-contact">
-
-                        <span
-                            class="footer-contact__icon"
-                            aria-hidden="true"
-                        >
-                            ✉
                         </span>
-
-                        <div class="footer-contact__body">
-
-                            <span class="footer-contact__label">
-                                Email
-                            </span>
-
-                            <a
-                                class="footer-contact__value"
-                                href="mailto:ozontraffic@mail.ru"
-                            >
-                            ozontraffic@mail.ru
-                            </a>
-
-                        </div>
-
-                    </li>
-
-                    <li class="footer-contact">
-
-                        <span
-                            class="footer-contact__icon"
-                            aria-hidden="true"
-                        >
-                            ◆
+                        <span class="footer-logo__name">
+                            Traffic<span>Market</span>
                         </span>
-
-                        <div class="footer-contact__body">
-
-                            <span class="footer-contact__label">
-                                Telegram канал
-                            </span>
-
-                            <a
-                                class="footer-contact__value"
-                                href="https://t.me/trafficmarkett"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @trafficmarkett
-                            </a>
-
-                        </div>
-
-                    </li>
-
-                    <li class="footer-contact">
-
-                        <span
-                            class="footer-contact__icon"
-                            aria-hidden="true"
-                        >
-                            ◉
-                        </span>
-
-                        <div class="footer-contact__body">
-
-                            <span class="footer-contact__label">
-                                Менеджер
-                            </span>
-
-                            <a
-                                class="footer-contact__value"
-                                href="https://t.me/ozon_traffic"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @ozon_traffic
-                            </a>
-
-                        </div>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <div class="footer__column footer__cta-wrap">
-
-                <div class="footer-cta">
-
-                    <h3 class="footer-cta__title">
-                        Есть вопросы?
-                    </h3>
-
-                    <p class="footer-cta__text">
-                        Напишите менеджеру в Telegram —
-                        обсудим вашу карточку.
+                    </a>
+                    <p class="footer__tagline">
+                        Продвижение товаров на Ozon.<br>
+                        Отзывы, репутация и комплексная работа с карточкой.
                     </p>
+                </div>
 
+                <div class="footer__contacts-panel">
+                    <a class="footer__contact-item" href="tel:+79605097599">
+                        <span class="footer__contact-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M8.2 4.5h7.6c1 0 1.8.8 1.8 1.8v11.4c0 1-.8 1.8-1.8 1.8H8.2c-1 0-1.8-.8-1.8-1.8V6.3c0-1 .8-1.8 1.8-1.8z" stroke="currentColor" stroke-width="1.75"/>
+                                <circle cx="12" cy="17.2" r="1" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="footer__contact-value">+7 (960) 509-75-99</span>
+                    </a>
+                    <span class="footer__contacts-divider" aria-hidden="true"></span>
+                    <a class="footer__contact-item" href="mailto:ozontraffic@mail.ru">
+                        <span class="footer__contact-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.75"/>
+                                <path d="M4 8l8 6 8-6" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="footer__contact-value">ozontraffic@mail.ru</span>
+                    </a>
+                </div>
+
+                <div class="footer__actions">
                     <a
-                        class="button footer-cta__button"
+                        class="footer__telegram"
+                        href="https://t.me/trafficmarkett"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Telegram канал TrafficMarket"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L4.77 13.31 2.16 12.2c-.88-.25-.89-.86.2-1.29l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.57 12.09c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.82.42z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        class="footer__cta"
                         href="https://t.me/ozon_traffic"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Написать в Telegram
+                        Свяжитесь с нами
                     </a>
+                </div>
 
+            </div>
+
+            <div class="footer__navigation-row">
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-nav-col__title">Меню сайта</h3>
+                    <nav class="footer-nav-col__list" aria-label="Меню сайта">
+                        <a href="#main">Главная</a>
+                        <a href="#work">Как мы работаем</a>
+                        <a href="#additional-services">Услуги</a>
+                        <a href="#pricing">Цены</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contacts">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-nav-col__title">Ozon</h3>
+                    <nav class="footer-nav-col__list" aria-label="Услуги Ozon">
+                        <a href="#review-services">Отзывы</a>
+                        <a href="#review-services">Работа с репутацией</a>
+                        <a href="#additional-services">SEO-оптимизация</a>
+                        <a href="#additional-services">Инфографика</a>
+                        <a href="#additional-services">Запуск товара</a>
+                        <a href="#additional-services">Комплексное продвижение</a>
+                    </nav>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-nav-col__title">Услуги</h3>
+                    <nav class="footer-nav-col__list" aria-label="Дополнительные услуги">
+                        <a href="#contacts">Анализ карточки</a>
+                        <a href="#review-services">Работа с отзывами</a>
+                        <a href="#additional-services">SEO карточки</a>
+                        <a href="#additional-services">Инфографика</a>
+                        <a href="#additional-services">Запуск товара под ключ</a>
+                        <a href="#additional-services">Комплексная работа с карточкой</a>
+                    </nav>
                 </div>
 
             </div>
 
         </div>
 
-
         <div class="container footer__bottom">
-
             <p class="footer__copyright">
                 © 2026 TrafficMarket. Все права защищены.
             </p>
-
-            <p class="footer__bottom-links">
-
-                <a
-                    href="https://t.me/trafficmarkett"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Telegram канал
-                </a>
-
-                <span aria-hidden="true">·</span>
-
-                <a
-                    href="https://t.me/ozon_traffic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Менеджер
-                </a>
-
+            <p class="footer__legal">
+                <a href="#">Политика конфиденциальности</a>
+                <span class="footer__legal-sep" aria-hidden="true">•</span>
+                <a href="#">Договор оферты</a>
             </p>
-
         </div>
 
     </footer>
+
+    <script>
+        (function () {
+            function initSectionRevealAnimations() {
+                var sectionIds = [
+                    "problems",
+                    "seller-types",
+                    "review-services",
+                    "guarantees",
+                    "reviews",
+                    "work",
+                    "pricing",
+                    "additional-services",
+                    "faq",
+                    "contacts",
+                ];
+
+                var sections = [];
+
+                sectionIds.forEach(function (sectionId) {
+                    var section = document.getElementById(sectionId);
+                    if (section) {
+                        sections.push(section);
+                    }
+                });
+
+                if (!sections.length) {
+                    return;
+                }
+
+                function showAllSections() {
+                    sections.forEach(function (section) {
+                        section.classList.add("is-visible");
+                    });
+                }
+
+                if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                    showAllSections();
+                    return;
+                }
+
+                if (!("IntersectionObserver" in window)) {
+                    showAllSections();
+                    return;
+                }
+
+                var revealObserver = new IntersectionObserver(
+                    function (entries) {
+                        entries.forEach(function (entry) {
+                            var section = entry.target;
+
+                            if (entry.isIntersecting && entry.intersectionRatio >= 0.14) {
+                                section.classList.add("is-visible");
+                                return;
+                            }
+
+                            if (!entry.isIntersecting || entry.intersectionRatio <= 0.04) {
+                                section.classList.remove("is-visible");
+                            }
+                        });
+                    },
+                    {
+                        threshold: [0, 0.04, 0.08, 0.14, 0.18],
+                        rootMargin: "0px 0px -8% 0px",
+                    }
+                );
+
+                sections.forEach(function (section) {
+                    revealObserver.observe(section);
+                });
+            }
+
+            initSectionRevealAnimations();
+
+            function initHeroAnimations() {
+                var hero = document.querySelector(".hero");
+                if (!hero) {
+                    return;
+                }
+
+                var motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+                var reducedMotion = motionQuery.matches;
+                var macbook = hero.querySelector(".seller-scene__macbook");
+
+                var scrollRotateCards = [
+                    { selector: ".hero-product--fan", coefficient: 6 },
+                    { selector: ".hero-product--drill", coefficient: -7 },
+                    { selector: ".hero-product--sneakers", coefficient: 6 },
+                ];
+
+                var cards = [];
+
+                scrollRotateCards.forEach(function (cfg) {
+                    var el = hero.querySelector(cfg.selector);
+                    if (!el) {
+                        return;
+                    }
+                    var img = el.querySelector("img");
+                    if (!img) {
+                        return;
+                    }
+                    cards.push({
+                        img: img,
+                        coefficient: cfg.coefficient,
+                        currentRotation: 0,
+                    });
+                });
+
+                if (reducedMotion) {
+                    hero.classList.add("is-hero-entered", "is-hero-interactive");
+                    return;
+                }
+
+                requestAnimationFrame(function () {
+                    hero.classList.add("is-hero-entered");
+                });
+
+                var interactive = false;
+                var lastScrollY = window.scrollY;
+                var scrollDirection = 0;
+                var scrollIdleTimer = null;
+                var scrollRotateLerp = 0.055;
+                var scrollIdleDelayMs = 110;
+
+                function lerp(value, target, amount) {
+                    return value + (target - value) * amount;
+                }
+
+                function onWindowScroll() {
+                    var currentY = window.scrollY;
+
+                    if (currentY > lastScrollY) {
+                        scrollDirection = 1;
+                    } else if (currentY < lastScrollY) {
+                        scrollDirection = -1;
+                    }
+
+                    lastScrollY = currentY;
+
+                    if (scrollIdleTimer) {
+                        window.clearTimeout(scrollIdleTimer);
+                    }
+
+                    scrollIdleTimer = window.setTimeout(function () {
+                        scrollDirection = 0;
+                    }, scrollIdleDelayMs);
+                }
+
+                function tick() {
+                    if (interactive) {
+                        cards.forEach(function (card) {
+                            var targetRotation = scrollDirection * card.coefficient;
+                            card.currentRotation = lerp(
+                                card.currentRotation,
+                                targetRotation,
+                                scrollRotateLerp
+                            );
+                            card.img.style.setProperty(
+                                "--hero-scroll-rotate",
+                                card.currentRotation.toFixed(3) + "deg"
+                            );
+                        });
+
+                        if (macbook) {
+                            macbook.style.transform = "translate(-50%, -50%)";
+                        }
+                    }
+
+                    requestAnimationFrame(tick);
+                }
+
+                window.setTimeout(function () {
+                    interactive = true;
+                    hero.classList.add("is-hero-interactive");
+                }, 2620);
+
+                window.addEventListener("scroll", onWindowScroll, { passive: true });
+                requestAnimationFrame(tick);
+
+                function onMotionPreferenceChange() {
+                    if (motionQuery.matches) {
+                        scrollDirection = 0;
+                        cards.forEach(function (card) {
+                            card.img.style.setProperty("--hero-scroll-rotate", "0deg");
+                        });
+                        hero.classList.add("is-hero-entered", "is-hero-interactive");
+                    }
+                }
+
+                if (typeof motionQuery.addEventListener === "function") {
+                    motionQuery.addEventListener("change", onMotionPreferenceChange);
+                } else if (typeof motionQuery.addListener === "function") {
+                    motionQuery.addListener(onMotionPreferenceChange);
+                }
+            }
+
+            initHeroAnimations();
+
+            function initFaqAccordion() {
+                var root = document.querySelector("[data-faq-accordion]");
+                if (!root) {
+                    return;
+                }
+
+                var items = root.querySelectorAll(".faq-item");
+
+                function setItemState(item, open) {
+                    var button = item.querySelector(".faq-item__button");
+                    var panel = item.querySelector(".faq-item__answer-wrapper");
+
+                    if (open) {
+                        panel.removeAttribute("hidden");
+                        requestAnimationFrame(function () {
+                            item.classList.add("is-open");
+                        });
+                        button.setAttribute("aria-expanded", "true");
+                        return;
+                    }
+
+                    item.classList.remove("is-open");
+                    button.setAttribute("aria-expanded", "false");
+
+                    window.setTimeout(function () {
+                        if (!item.classList.contains("is-open")) {
+                            panel.setAttribute("hidden", "");
+                        }
+                    }, 360);
+                }
+
+                items.forEach(function (item) {
+                    var button = item.querySelector(".faq-item__button");
+                    var isInitiallyOpen = item.classList.contains("is-open");
+                    var panel = item.querySelector(".faq-item__answer-wrapper");
+
+                    if (!isInitiallyOpen) {
+                        panel.setAttribute("hidden", "");
+                    }
+
+                    button.addEventListener("click", function () {
+                        var isOpen = item.classList.contains("is-open");
+
+                        items.forEach(function (other) {
+                            setItemState(other, false);
+                        });
+
+                        if (!isOpen) {
+                            setItemState(item, true);
+                        }
+                    });
+                });
+            }
+
+            initFaqAccordion();
+        })();
+    </script>
 
 </body>
 </html>
