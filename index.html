@@ -27,7 +27,8 @@
 
     <!-- Подключаем CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/Block 11/only-logo.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -186,12 +187,31 @@
                     </div>
         
                     <div class="hero__advantages">
-        
-                        <span>✓ Анализ карточки и конкурентов</span>
-                        <span>↗ Поиск точек роста</span>
-                        <span>◎ Стратегия под ваш товар</span>
-                        <span>◉ Сопровождение на всех этапах</span>
-        
+
+                        <div class="hero__advantages-item">
+                            <span class="hero__advantages-dot hero__advantages-dot--blue" aria-hidden="true"></span>
+                            <div class="hero__advantages-copy">
+                                <strong class="hero__advantages-title">3 формата</strong>
+                                <span class="hero__advantages-caption">Оценки, текст и медиа</span>
+                            </div>
+                        </div>
+
+                        <div class="hero__advantages-item">
+                            <span class="hero__advantages-dot hero__advantages-dot--pink" aria-hidden="true"></span>
+                            <div class="hero__advantages-copy">
+                                <strong class="hero__advantages-title">Гарантия 21 день</strong>
+                                <span class="hero__advantages-caption">Замена или возврат</span>
+                            </div>
+                        </div>
+
+                        <div class="hero__advantages-item">
+                            <span class="hero__advantages-dot hero__advantages-dot--violet" aria-hidden="true"></span>
+                            <div class="hero__advantages-copy">
+                                <strong class="hero__advantages-title">Всё согласуем</strong>
+                                <span class="hero__advantages-caption">Тексты, фото и видео</span>
+                            </div>
+                        </div>
+
                     </div>
         
                 </div>
@@ -254,123 +274,67 @@
                 </h2>
 
                 <p class="reviews-explainer__description">
-                    Отзывы и оценки помогают покупателю быстрее понять, можно ли доверять товару.
-                    Чем убедительнее выглядит репутация карточки, тем проще ей конкурировать
-                    за внимание и заказы.
+                    Отзывы помогают сформировать первое впечатление о товаре ещё до покупки.
                 </p>
 
-                <div class="reviews-info">
+                <div class="reviews-explainer__panel">
 
-                    <article class="review-info-card">
+                    <div class="reviews-explainer__panel-left">
 
-                        <div class="review-info-card__header">
+                        <p class="reviews-explainer__label">РЕПУТАЦИЯ КАРТОЧКИ</p>
 
-                            <div class="review-info-card__icon" aria-hidden="true">
-                                <svg
-                                    width="38"
-                                    height="38"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M4 10h16v9H4v-9z"
-                                        stroke="currentColor"
-                                        stroke-width="1.75"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M6 10V8.2L8 4h8l2 4.2V10"
-                                        stroke="currentColor"
-                                        stroke-width="1.75"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M9 14h6"
-                                        stroke="currentColor"
-                                        stroke-width="1.75"
-                                        stroke-linecap="round"
-                                    />
-                                </svg>
-                            </div>
+                        <h3 class="reviews-explainer__panel-title">
+                            Покупатель видит рейтинг ещё до того, как откроет карточку
+                        </h3>
 
-                            <h3 class="review-info-card__title">
-                                Как работают отзывы на Ozon?
-                            </h3>
+                        <p class="reviews-explainer__panel-text">
+                            Количество оценок, содержание отзывов и фотографии помогают покупателю
+                            быстрее составить первое впечатление о товаре.
+                        </p>
 
+                        <div class="reviews-explainer__stars" aria-hidden="true">
+                            <span class="reviews-explainer__star">★</span>
+                            <span class="reviews-explainer__star">★</span>
+                            <span class="reviews-explainer__star">★</span>
+                            <span class="reviews-explainer__star">★</span>
+                            <span class="reviews-explainer__star">★</span>
                         </div>
 
-                        <ul class="review-info-card__list">
+                    </div>
 
-                            <li class="review-info-card__item">
-                                Покупатель оставляет отзыв после получения заказа
-                            </li>
-                            <li class="review-info-card__item">
-                                Ozon учитывает оценку при ранжировании товара
-                            </li>
-                            <li class="review-info-card__item">
-                                Система показывает товар чаще тем, кто ищет аналоги
-                            </li>
-                            <li class="review-info-card__item">
-                                Новые покупатели видят мнения других
-                            </li>
+                    <div class="reviews-explainer__panel-right">
 
-                        </ul>
-
-                    </article>
-
-
-                    <article class="review-info-card">
-
-                        <div class="review-info-card__header">
-
-                            <div class="review-info-card__icon" aria-hidden="true">
-                                <svg
-                                    width="38"
-                                    height="38"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M12 3l7.5 3.75V11c0 4.55-3.1 8.35-7.5 9.25C7.6 19.35 4.5 15.55 4.5 11V6.75L12 3z"
-                                        stroke="currentColor"
-                                        stroke-width="1.75"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M12 8.25l1.35 2.73 3.02.44-2.18 2.13.52 3.01L12 15.2l-2.71 1.36.52-3.01-2.18-2.13 3.02-.44L12 8.25z"
-                                        fill="currentColor"
-                                    />
-                                </svg>
+                        <div class="reviews-explainer__step">
+                            <span class="reviews-explainer__step-num">01</span>
+                            <div class="reviews-explainer__step-content">
+                                <h4 class="reviews-explainer__step-title">Доверие к товару</h4>
+                                <p class="reviews-explainer__step-text">
+                                    Отзывы помогают закрыть вопросы, на которые не отвечает описание карточки.
+                                </p>
                             </div>
-
-                            <h3 class="review-info-card__title">
-                                Почему отзывы важны для продвижения?
-                            </h3>
-
                         </div>
 
-                        <ul class="review-info-card__list">
+                        <div class="reviews-explainer__step">
+                            <span class="reviews-explainer__step-num">02</span>
+                            <div class="reviews-explainer__step-content">
+                                <h4 class="reviews-explainer__step-title">Выбор между аналогами</h4>
+                                <p class="reviews-explainer__step-text">
+                                    При похожей цене покупатель сравнивает рейтинг товара и опыт других покупателей.
+                                </p>
+                            </div>
+                        </div>
 
-                            <li class="review-info-card__item">
-                                Повышают позиции в поисковой выдаче
-                            </li>
-                            <li class="review-info-card__item">
-                                Увеличивают конверсию в 2–3 раза
-                            </li>
-                            <li class="review-info-card__item">
-                                Снижают процент возвратов
-                            </li>
-                            <li class="review-info-card__item">
-                                Улучшают рейтинг продавца
-                            </li>
-                            <li class="review-info-card__item">
-                                Помогают выиграть у конкурентов
-                            </li>
+                        <div class="reviews-explainer__step">
+                            <span class="reviews-explainer__step-num">03</span>
+                            <div class="reviews-explainer__step-content">
+                                <h4 class="reviews-explainer__step-title">Решение о покупке</h4>
+                                <p class="reviews-explainer__step-text">
+                                    Фотографии, видео и подробный текст помогают лучше оценить товар до оформления заказа.
+                                </p>
+                            </div>
+                        </div>
 
-                        </ul>
-
-                    </article>
+                    </div>
 
                 </div>
 
@@ -383,128 +347,118 @@
             <div class="container">
 
                 <header class="seller-types__header">
+                    <p class="seller-types__eyebrow">КОМУ ПОДОЙДЁТ</p>
                     <h2 class="seller-types__heading">
-                        Кому подойдёт сервис
+                        Для новых и действующих карточек
                     </h2>
                     <p class="seller-types__description">
-                        Работаем как с новыми товарами, которым важно сформировать первые отзывы,
-                        так и с карточками, которым требуется дальнейшая работа с рейтингом и репутацией.
+                        Подбираем формат работы под этап и текущую репутацию товара.
                     </p>
                 </header>
 
-                <div class="seller-types__grid">
+                <div class="seller-types__stage">
 
-                    <article class="seller-type-card">
-                        <div class="seller-type-card__media">
+                    <div class="seller-types__panel">
+
+                        <div class="seller-types__scenario seller-types__scenario--start">
+
+                            <div class="seller-types__scenario-inner">
+
+                                <div class="seller-types__scenario-top">
+                                    <p class="seller-types__scenario-label">СТАРТ КАРТОЧКИ</p>
+                                    <span class="seller-types__number" aria-hidden="true">01</span>
+                                </div>
+
+                                <h3 class="seller-types__scenario-title">
+                                    Товар только вышел на Ozon
+                                </h3>
+
+                                <p class="seller-types__scenario-text">
+                                    Покупатель видит новую карточку, но пока не находит оценок
+                                    и опыта других покупателей.
+                                </p>
+
+                                <p class="seller-types__conditions-heading">АКТУАЛЬНО, ЕСЛИ</p>
+
+                                <ul class="seller-types__conditions">
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Нет первых оценок
+                                    </li>
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Мало информации
+                                    </li>
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Нужны фото и видео
+                                    </li>
+                                </ul>
+
+                                <p class="seller-types__result">
+                                    Задача — сформировать первое доверие
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="seller-types__visual">
                             <img
-                                class="seller-type-card__image"
-                                src="images/Block 2/old-seller.png"
-                                alt="Опытный селлер на Ozon — работа с рейтингом и отзывами"
-                                width="480"
-                                height="320"
+                                class="seller-types__image"
+                                src="images/Block 3/card.png"
+                                alt="Карточка товара с рейтингом и медиаотзывами"
+                                width="1114"
+                                height="1412"
                                 loading="lazy"
                                 decoding="async"
                             >
                         </div>
-                        <div class="seller-type-card__body">
-                            <h3 class="seller-type-card__title">Опытные селлеры на Ozon</h3>
-                            <p class="seller-type-card__description">
-                                Отзывы помогают укреплять репутацию действующей карточки, поддерживать высокий рейтинг
-                                и повышать доверие новых покупателей к товару.
-                            </p>
-                            <p class="seller-type-card__subtitle">Поможет:</p>
-                            <ul class="seller-type-card__list">
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>укреплять рейтинг и репутацию карточки</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>работать с негативной обратной связью</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>повышать доверие новых покупателей</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>дополнять карточку отзывами с фото и видео</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
 
-                    <article class="seller-type-card">
-                        <div class="seller-type-card__media">
-                            <img
-                                class="seller-type-card__image"
-                                src="images/Block 2/new-seller.png"
-                                alt="Новичок на Ozon — первые отзывы и доверие к карточке"
-                                width="480"
-                                height="320"
-                                loading="lazy"
-                                decoding="async"
-                            >
+                        <div class="seller-types__scenario seller-types__scenario--reputation">
+
+                            <div class="seller-types__scenario-inner">
+
+                                <div class="seller-types__scenario-top">
+                                    <p class="seller-types__scenario-label">РАБОТА С РЕПУТАЦИЕЙ</p>
+                                    <span class="seller-types__number" aria-hidden="true">02</span>
+                                </div>
+
+                                <h3 class="seller-types__scenario-title">
+                                    Отзывы уже есть, но карточка требует внимания
+                                </h3>
+
+                                <p class="seller-types__scenario-text">
+                                    Рейтинг, свежесть отзывов или их содержание могут мешать товару
+                                    выглядеть убедительно.
+                                </p>
+
+                                <p class="seller-types__conditions-heading">АКТУАЛЬНО, ЕСЛИ</p>
+
+                                <ul class="seller-types__conditions">
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Нужны свежие отзывы
+                                    </li>
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Не хватает медиаконтента
+                                    </li>
+                                    <li class="seller-types__condition">
+                                        <span class="seller-types__condition-dot" aria-hidden="true"></span>
+                                        Требуется работа с рейтингом
+                                    </li>
+                                </ul>
+
+                                <p class="seller-types__result">
+                                    Задача — усилить репутацию карточки
+                                </p>
+
+                            </div>
+
                         </div>
-                        <div class="seller-type-card__body">
-                            <h3 class="seller-type-card__title">Новички на Ozon</h3>
-                            <p class="seller-type-card__description">
-                                Если товар только появился на маркетплейсе, первые отзывы помогают сформировать
-                                первоначальное доверие к карточке и сделать предложение убедительнее для покупателей.
-                            </p>
-                            <p class="seller-type-card__subtitle">Поможет:</p>
-                            <ul class="seller-type-card__list">
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>сформировать первые оценки и отзывы</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>повысить доверие к новому товару</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>сделать карточку информативнее</span>
-                                </li>
-                                <li class="seller-type-card__item">
-                                    <span class="seller-type-card__check" aria-hidden="true">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12.5l3.5 3.5L18 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </span>
-                                    <span>быстрее сформировать первоначальную репутацию</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
+
+                    </div>
 
                 </div>
 
